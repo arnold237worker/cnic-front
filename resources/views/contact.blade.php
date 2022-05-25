@@ -35,7 +35,7 @@
                     <h3 class="contact-page-details__title">Nos contacts</h3>
                     <div class="contact-page-details__content">
                         <div class="contact-page-details__content-img">
-                            <img src="{{asset('assets/images/resources/c1.jpg')}}" style="width: 270px; height: 292px; object-fit: cover" alt="">
+                            <img src="{{asset('assets/images/resources/v1.jpg')}}" style="width: 270px; height: 292px; object-fit: cover" alt="">
                         </div>
                         <div class="contact-page-details__content-text-box">
                             <p class="contact-page-details__content-text-1">Pour toutes vos préoccupations, remarques ou suggestions vous pouvez nous laisser un message.</p>

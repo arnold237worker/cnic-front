@@ -24,7 +24,7 @@
             <div class="col-xl-6 col-lg-6">
                 <div class="contact-one__left">
                     <div class="section-title text-left">
-                        <span class="section-title__tagline">Rejoignez la CNIC</span>
+                        <span class="section-title__tagline">Rejoignez le CNIC</span>
                         <h2 class="section-title__title">Devenez vendeur</h2>
                     </div>
                     <p class="contact-one__text">Inscrivez-vous en tant que vendeur de la Claudel Noubissie International Consulting et accéder à un espace dédié aux vendeurs contenant des formations inédites. </p>
@@ -34,6 +34,8 @@
                         <div class="contact-one__bottom-img">
                             <a href="javascript:void(0)" onclick="changeMethod('OM')"><img src="{{asset('assets/images/resources/om.jpg')}}" class="paiement_img"  alt=""></a>
                             <a href="javascript:void(0)" onclick="changeMethod('MOMO')"><img src="{{asset('assets/images/resources/momo.jpg')}}" class="paiement_img"  alt=""></a>
+                            <a href="javascript:void(0)" onclick="changeMethod('VISA')"><img src="{{asset('assets/images/resources/master.png')}}" class="paiement_img"  alt=""></a>
+                            <a href="javascript:void(0)" onclick="changeMethod('VISA')"><img src="{{asset('assets/images/resources/visa.png')}}" class="paiement_img"  alt=""></a>
                         </div>
                     </div>
                 </div>

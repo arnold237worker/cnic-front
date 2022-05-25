@@ -30,9 +30,10 @@ class HomeController extends Controller
         return view('vendeur');
     }
 
-    public function service()
+    public function service($nom)
     {
         session(['page'=> 'service']);
-        return view('service');
+        $nom = $nom;
+        return view('service', compact("nom"));
     }
 }

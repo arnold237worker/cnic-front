@@ -6084,9 +6084,10 @@ ul {
 .paiement_img {
   width: 100px; 
   height: 100px; 
-  object-fit: cover; 
+  object-fit: contain; 
   border-radius: 50%;
   margin-right: 20px;
+  border: 1px solid var(--conult-base);
 }
 
 .paiement_img:hover {

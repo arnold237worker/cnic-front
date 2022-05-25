@@ -202,7 +202,7 @@
                         </div>
                         <div class="feature-one__icon-box">
                             <div class="feature-one__icon-title-box">
-                                <h3 class="feature-one__icon-title"><a href="{{route('service')}}">Conseil et assistance opérationnelle</a></h3>
+                                <h3 class="feature-one__icon-title"><a href="{{route('service', "conseil-et-assistance-operationnelle")}}">Conseil et assistance opérationnelle</a></h3>
                             </div>
                             <div class="feature-one__icon">
                                 <span class="icon-strategy"></span>
@@ -215,7 +215,7 @@
                             <div class="feature-one__hover-icon">
                                 <span class="icon-strategy"></span>
                             </div>
-                            <h4 class="feature-one__hover-title"><a href="{{route('service')}}">Conseil et assistance opérationnelle</a></h4>
+                            <h4 class="feature-one__hover-title"><a href="{{route('service', "conseil-et-assistance-operationnelle")}}">Conseil et assistance opérationnelle</a></h4>
                         </div>
                     </div>
                 </div>
@@ -229,7 +229,7 @@
                         </div>
                         <div class="feature-one__icon-box">
                             <div class="feature-one__icon-title-box">
-                                <h3 class="feature-one__icon-title"><a href="audit-marketing.html">Force de vente</a></h3>
+                                <h3 class="feature-one__icon-title"><a href="{{route('service', "force-de-vente")}}">Force de vente</a></h3>
                             </div>
                             <div class="feature-one__icon">
                                 <span class="icon-point-of-sale"></span>
@@ -242,7 +242,7 @@
                             <div class="feature-one__hover-icon">
                                 <span class="icon-point-of-sale"></span>
                             </div>
-                            <h4 class="feature-one__hover-title"><a href="audit-marketing.html">Force de vente</a></h4>
+                            <h4 class="feature-one__hover-title"><a href="{{route('service', "force-de-vente")}}">Force de vente</a></h4>
                         </div>
                     </div>
                 </div>
@@ -256,7 +256,7 @@
                         </div>
                         <div class="feature-one__icon-box">
                             <div class="feature-one__icon-title-box">
-                                <h3 class="feature-one__icon-title"><a href="{{route('service')}}">Le Claudel NOUBISSIE Business Group </a></h3>
+                                <h3 class="feature-one__icon-title"><a href="{{route('service', "claudel-noubissie-business-group")}}">Le Claudel NOUBISSIE Business Group </a></h3>
                             </div>
                             <div class="feature-one__icon">
                                 <span class="icon-consumer-behavior"></span>
@@ -269,7 +269,7 @@
                             <div class="feature-one__hover-icon">
                                 <span class="icon-consumer-behavior"></span>
                             </div>
-                            <h4 class="feature-one__hover-title"><a href="{{route('service')}}">Le Claudel NOUBISSIE Business Group </a></h4>
+                            <h4 class="feature-one__hover-title"><a href="{{route('service', "claudel-noubissie-business-group")}}">Le Claudel NOUBISSIE Business Group </a></h4>
                         </div>
                     </div>
                 </div>
@@ -279,11 +279,11 @@
                 <div class="feature-one__single">
                     <div class="feature-one__img-box">
                         <div class="feature-one__img">
-                            <img src="{{asset('assets/images/resources/s4.jpg')}}" style="width: 100%; height: 278px; object-fit: cover" alt="">
+                            <img src="{{asset('assets/images/resources/tontine.jpg')}}" style="width: 100%; height: 278px; object-fit: cover" alt="">
                         </div>
                         <div class="feature-one__icon-box">
                             <div class="feature-one__icon-title-box">
-                                <h3 class="feature-one__icon-title"><a href="{{route('service')}}">La tontine structurelle Africaine</a></h3>
+                                <h3 class="feature-one__icon-title"><a href="{{route('service', 'tontine-structurelle-africaine')}}">La tontine structurelle Africaine</a></h3>
                             </div>
                             <div class="feature-one__icon">
                                 <span class="icon-consumer-behavior"></span>
@@ -291,12 +291,12 @@
                         </div>
                         <div class="feature-one__hover">
                             <div class="feature-one__hover-bg"
-                                style="background-image: url({{asset('assets/images/resources/s4.jpg')}})">
+                                style="background-image: url({{asset('assets/images/resources/tontine.jpg')}})">
                             </div>
                             <div class="feature-one__hover-icon">
                                 <span class="icon-consumer-behavior"></span>
                             </div>
-                            <h4 class="feature-one__hover-title"><a href="{{route('service')}}">La tontine structurelle Africaine</a></h4>
+                            <h4 class="feature-one__hover-title"><a href="{{route('service', 'tontine-structurelle-africaine')}}">La tontine structurelle Africaine</a></h4>
                         </div>
                     </div>
                 </div>
@@ -310,7 +310,7 @@
                         </div>
                         <div class="feature-one__icon-box">
                             <div class="feature-one__icon-title-box">
-                                <h3 class="feature-one__icon-title"><a href="{{route('service')}}">Formations</a></h3>
+                                <h3 class="feature-one__icon-title"><a href="{{route('service', 'formations')}}">Formations</a></h3>
                             </div>
                             <div class="feature-one__icon">
                                 <span class="icon-consumer-behavior"></span>
@@ -323,7 +323,7 @@
                             <div class="feature-one__hover-icon">
                                 <span class="icon-consumer-behavior"></span>
                             </div>
-                            <h4 class="feature-one__hover-title"><a href="{{route('service')}}">Formations</a></h4>
+                            <h4 class="feature-one__hover-title"><a href="{{route('service', 'formations')}}">Formations</a></h4>
                         </div>
                     </div>
                 </div>
@@ -333,11 +333,11 @@
                 <div class="feature-one__single">
                     <div class="feature-one__img-box">
                         <div class="feature-one__img">
-                            <img src="{{asset('assets/images/resources/about2.jpg')}}" style="width: 100%; height: 278px; object-fit: cover" alt="">
+                            <img src="{{asset('assets/images/resources/coffret.jpg')}}" style="width: 100%; height: 278px; object-fit: cover" alt="">
                         </div>
                         <div class="feature-one__icon-box">
                             <div class="feature-one__icon-title-box">
-                                <h3 class="feature-one__icon-title"><a href="{{route('service')}}">Coffret VIP</a></h3>
+                                <h3 class="feature-one__icon-title"><a href="{{route('service', 'coffret-vip')}}">Coffret VIP</a></h3>
                             </div>
                             <div class="feature-one__icon">
                                 <span class="icon-consumer-behavior"></span>
@@ -345,12 +345,12 @@
                         </div>
                         <div class="feature-one__hover">
                             <div class="feature-one__hover-bg"
-                                style="background-image: url({{asset('assets/images/resources/about2.jpg')}})">
+                                style="background-image: url({{asset('assets/images/resources/coffret.jpg')}})">
                             </div>
                             <div class="feature-one__hover-icon">
                                 <span class="icon-consumer-behavior"></span>
                             </div>
-                            <h4 class="feature-one__hover-title"><a href="{{route('service')}}">Coffret VIP</a></h4>
+                            <h4 class="feature-one__hover-title"><a href="{{route('service', 'coffret-vip')}}">Coffret VIP</a></h4>
                         </div>
                     </div>
                 </div>

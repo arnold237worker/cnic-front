@@ -113,12 +113,12 @@
                                     <li class="dropdown @if(session('page') == "service") current @endif">
                                         <a href="#">Services</a>
                                         <ul>
-                                            <li><a href="{{route('service')}}">Conseil et assistance opérationnelle</a></li>
-                                            <li><a href="{{route('service')}}">Force de vente</a></li>
-                                            <li><a href="{{route('service')}}">Claudel NOUBISSIE Business Group</a></li>
-                                            <li><a href="{{route('service')}}">Tontine Structurelle Africaine</a></li>
-                                            <li><a href="{{route('service')}}">Formations</a></li>
-                                            <li><a href="{{route('service')}}">Coffret VIP</a></li>
+                                            <li><a href="{{route('service', "conseil-et-assistance-operationnelle")}}">Conseil et assistance opérationnelle</a></li>
+                                            <li><a href="{{route('service', "force-de-vente")}}">Force de vente</a></li>
+                                            <li><a href="{{route('service', "claudel-noubissie-business-group")}}">Claudel NOUBISSIE Business Group</a></li>
+                                            <li><a href="{{route('service', 'tontine-structurelle-africaine')}}">Tontine Structurelle Africaine</a></li>
+                                            <li><a href="{{route('service', 'formations')}}">Formations</a></li>
+                                            <li><a href="{{route('service', 'coffret-vip')}}">Coffret VIP</a></li>
                                         </ul>
                                     </li>
                                     <li class="@if(session('page') == "about") current @endif"><a href="{{route('about')}}">Qui sommes-nous ?</a></li>
@@ -302,7 +302,7 @@
 
 
     <!-- template js -->
-    <script src="assets/js/conult.js"></script>
+    <script src="{{asset('assets/js/conult.js')}}"></script>
     @yield('scripts')
 </body>
 
