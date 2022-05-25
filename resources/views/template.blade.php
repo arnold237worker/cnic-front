@@ -182,10 +182,10 @@
                                             <div class="footer-widget__column footer-widget__explore clearfix">
                                                 <h3 class="footer-widget__title">Menu</h3>
                                                 <ul class="footer-widget__explore-list list-unstyled clearfix">
-                                                    <li><a href="about.html">Accueil</a></li>
-                                                    <li><a href="about.html">Qui sommes-nous ?</a></li>
-                                                    <li><a href="cases.html">Galerie</a></li>
-                                                    <li><a href="news.html">Contactez-nous</a></li>
+                                                    <li><a href="{{route('home')}}">Accueil</a></li>
+                                                    <li><a href="{{route('about')}}">Qui sommes-nous ?</a></li>
+                                                    <li><a href="{{route('contact')}}">Contactez-nous</a></li>
+                                                    <li><a href="{{route('vendeur')}}">Devenir Membre</a></li>
                                                 </ul>
                                             </div>
                                         </div>
