@@ -7,10 +7,10 @@
     </div>
     <div class="container">
         <div class="page-header__inner">
-            <h2>{{ucfirst(str_replace("-", " ", $nom)) }}</h2>
+            <h2>{{$service->nom}}</h2>
             <ul class="thm-breadcrumb list-unstyled">
                 <li><a href="{{route('home')}}">Accueil</a></li>
-                <li class="active">{{ucfirst(str_replace("-", " ", $nom)) }}</li>
+                <li class="active">{{$service->nom}}</li>
             </ul>
         </div>
     </div>
@@ -21,16 +21,37 @@
 <section class="service-details">
     <div class="container">
         <div class="row">
+            <div class="col-xl-8 col-lg-7">
+                <div class="service-details__right">
+                    <div class="service-details__img">
+                            <img src="{{$service->image}}" class="service-img"  alt=" {{$service->nom}} ">
+                    </div>
+                    <div class="service-details__content">
+                        <h3 class="service-details__title">{{ $service->nom }}</h3>
+                        <p class="service-details__text-1">{{$service->description}}</p>
+                    </div>
+                    @if ($service->livret)
+                    <div class="service-details__bottom">
+                        <a href=" {{$service->livret}} " download=" {{$service->nom}}.pdf " target="_blank">
+                            <div class="service-details__bottom-icon">
+                                <img src="{{asset('assets/images/resources/pdf.png')}}" width="100" alt="">
+                                
+                            <p class="service-details__bottom-text">Télécharger le livret pour en savoir plus.</p>
+                            </div>
+                        </a>
+                    </div>
+                    @endif
+                </div>
+            </div>
+            
             <div class="col-xl-4 col-lg-5">
                 <div class="service-details__sidebar">
                     <div class="service-details__sidebar-service">
                         <ul class="service-details__sidebar-service-list list-unstyled">
-                            <li @if ($nom == "conseil-et-assistance-operationnelle") class="current" @endif><a href="{{route('service', "conseil-et-assistance-operationnelle")}}">Conseil et assistance opérationnelle <span class="icon-right-arrow"></span></a></li>
-                            <li @if ($nom == "force-de-vente") class="current" @endif><a href="{{route('service', "force-de-vente")}}">Force de Vente <span class="icon-right-arrow"></span></a></li>
-                            <li @if ($nom == "claudel-noubissie-business-group") class="current" @endif><a href="{{route('service', "claudel-noubissie-business-group")}}">Claudel NOUBISSIE Business Group <span class="icon-right-arrow"></span></a></li>
-                            <li @if ($nom == "tontine-structurelle-africaine") class="current" @endif><a href="{{route('service', 'tontine-structurelle-africaine')}}">La tontine structurelle Africaine <span class="icon-right-arrow"></span></a></li>
-                            <li @if ($nom == "formations") class="current" @endif><a href="{{route('service', 'formations')}}">Formations <span class="icon-right-arrow"></span></a></li>
-                            <li @if ($nom == "coffret-vip") class="current" @endif><a href="{{route('service', 'coffret-vip')}}">Coffret VIP <span class="icon-right-arrow"></span></a></li>
+                            @foreach ($services as $item)
+                            <li @if ($service->id == $item->id) class="current" @endif><a href="{{route('service', $item->lien)}}">{{$item->nom}} <span class="icon-right-arrow"></span></a></li>
+                            @endforeach
+                            
                         </ul>
                     </div>
                     <div class="service-details__need-help">
@@ -43,41 +64,6 @@
                         <div class="service-details__need-help-contact">
                             <a href="https://wa.me/+237676423188">(+237) 676 42 31 88 </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-8 col-lg-7">
-                <div class="service-details__right">
-                    <div class="service-details__img">
-                        @if ($nom == "conseil-et-assistance-operationnelle")
-                            <img src="{{asset('assets/images/resources/s1.jpg')}}" alt="">
-                        @endif
-                        @if ($nom == "force-de-vente")
-                            <img src="{{asset('assets/images/resources/s2.jpg')}}" alt="">
-                        @endif
-                        @if ($nom == "claudel-noubissie-business-group")
-                            <img src="{{asset('assets/images/resources/s3.jpg')}}" alt="">
-                        @endif
-                        @if ($nom == "tontine-structurelle-africaine")
-                            <img src="{{asset('assets/images/resources/tontine.jpg')}}" alt="">
-                        @endif
-                        @if ($nom == "formations")
-                            <img src="{{asset('assets/images/resources/v3.jpg')}}" alt="">
-                        @endif
-                        @if ($nom == "coffret-vip")
-                            <img src="{{asset('assets/images/resources/coffret.jpg')}}" alt="">
-                        @endif
-                    </div>
-                    <div class="service-details__content">
-                        <h3 class="service-details__title">{{ucfirst(str_replace("-", " ", $nom)) }}</h3>
-                        <p class="service-details__text-1">Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui dolorem ipsum quia quaed inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Aelltes port lacus quis enim var sed efficitur turpis gilla sed sit amet finibus eros. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ndustry standard dummy text ever since the 1500s.</p>
-                        <p class="service-details__text-2">It has survived not only five centuries. Lorem Ipsum is simply dummy text of the new design printng and type setting Ipsum take a look at our round. When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
-                    </div>
-                    <div class="service-details__bottom">
-                        <div class="service-details__bottom-icon">
-                            <img src="{{asset('assets/images/resources/pdf.png')}}" width="100" alt="">
-                        </div>
-                        <p class="service-details__bottom-text">Télécharger le livret pour en savoir plus sur le service.</p>
                     </div>
                 </div>
             </div>

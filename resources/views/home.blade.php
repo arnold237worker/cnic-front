@@ -193,7 +193,36 @@
         </div>
         
         <div class="row">
+            @foreach ($services as $item)
             <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                <!--Feature One Single-->
+                <div class="feature-one__single">
+                    <div class="feature-one__img-box">
+                        <div class="feature-one__img">
+                            <img src="{{$item->image}}" style="width: 100%; height: 350px; object-fit: cover" alt="">
+                        </div>
+                        <div class="feature-one__icon-box">
+                            <div class="feature-one__icon-title-box">
+                                <h3 class="feature-one__icon-title"><a href="{{route('service', $item->lien)}}">{{$item->nom}}</a></h3>
+                            </div>
+                            {{-- <div class="feature-one__icon">
+                                <span class="icon-strategy"></span>
+                            </div> --}}
+                        </div>
+                        <div class="feature-one__hover">
+                            <div class="feature-one__hover-bg"
+                                style="background-image: url({{$item->image}})">
+                            </div>
+                            {{-- <div class="feature-one__hover-icon">
+                                <span class="icon-strategy"></span>
+                            </div> --}}
+                            <h4 class="feature-one__hover-title"><a href="{{route('service', $item->lien)}}">{{$item->nom}}</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+            {{-- <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
                 <!--Feature One Single-->
                 <div class="feature-one__single">
                     <div class="feature-one__img-box">
@@ -219,8 +248,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+            </div> --}}
+            {{-- <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
                 <!--Feature One Single-->
                 <div class="feature-one__single">
                     <div class="feature-one__img-box">
@@ -354,7 +383,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
@@ -386,10 +415,7 @@
             <div class="col-xl-6">
                 <div class="about-one__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                     <div class="about-one__img">
-                        <img src="{{asset('assets/images/resources/v2.jpg')}}" alt="">
-                    </div>
-                    <div class="about-one__shape">
-                        <img src="{{asset('assets/images/shapes/v2.jpg')}}" alt="">
+                        <img src="{{asset('assets/images/resources/v2.jpg')}}" class="cnic-img" alt="">
                     </div>
                 </div>
             </div>
@@ -435,4 +461,5 @@
     </div>
 </section>
 <!--About One End-->
+<br/>
 @endsection

@@ -56,13 +56,14 @@
 
     <!-- template styles -->
     <link rel="stylesheet" href="{{asset('assets/css/conult.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/css/noty.css?v1')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/conult-responsive.css')}}" />
 </head>
 
 <body>
-    <div class="preloader">
+    {{-- <div class="preloader">
         <img class="preloader__image" width="100" src="{{asset('assets/images/resources/logo.png')}}" alt="CNIC SARL" />
-    </div>
+    </div> --}}
     <!-- /.preloader -->
     <div class="page-wrapper">
         <header class="main-header-two clearfix">
@@ -104,7 +105,7 @@
                     <div class="container clearfix">
                         <div class="main-menu-two__wrapper-left">
                             <div class="main-menu-two__wrapper-logo" style="margin-top: -15px">
-                                <a href="{{route('home')}}"><img src="{{asset('assets/images/resources/logo.png')}}" width="80"  alt=""></a>
+                                <a href="{{route('home')}}"><img src="{{asset('assets/images/resources/logo.png')}}" width="80"  alt="CNIC SARL"></a>
                             </div>
                             <div class="main-menu-two__wrapper-main-menu">
                                 <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
@@ -113,25 +114,21 @@
                                     <li class="dropdown @if(session('page') == "service") current @endif">
                                         <a href="#">Services</a>
                                         <ul>
-                                            <li><a href="{{route('service', "conseil-et-assistance-operationnelle")}}">Conseil et assistance opérationnelle</a></li>
-                                            <li><a href="{{route('service', "force-de-vente")}}">Force de vente</a></li>
-                                            <li><a href="{{route('service', "claudel-noubissie-business-group")}}">Claudel NOUBISSIE Business Group</a></li>
-                                            <li><a href="{{route('service', 'tontine-structurelle-africaine')}}">Tontine Structurelle Africaine</a></li>
-                                            <li><a href="{{route('service', 'formations')}}">Formations</a></li>
-                                            <li><a href="{{route('service', 'coffret-vip')}}">Coffret VIP</a></li>
+                                            @foreach (App\Models\Service::get() as $item)
+                                                <li><a href="{{route('service', $item->lien)}}"> {{$item->nom}} </a></li>
+                                            @endforeach
+                                            
                                         </ul>
                                     </li>
                                     <li class="@if(session('page') == "about") current @endif"><a href="{{route('about')}}">Qui sommes-nous ?</a></li>
                                     <li class="@if(session('page') == "contact") current @endif"><a href="{{route('contact')}}">Contactez-Nous</a></li>
                                     <li class="@if(session('page') == "vendeur") current @endif"><a href="{{route('vendeur')}}">Devenir vendeur</a></li>
+                                    <li class="espace-vendeur-link"><a href="{{env('BO_URL')}}">Espace vendeur</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="main-menu-two__wrapper-right">
-                            <div class="main-menu-two__wrapper-search-cat">
-                                <a href="#" class="main-menu-two__wrapper-search search-toggler icon-magnifying-glass"></a>
-
-                            </div>
+                        <div class="main-menu-two__wrapper-right" style="margin-top: -15px">
+                            <a href=" {{env('BO_URL')}}  " target="_blank" class="btn btn-primary btn-md espace-btn" >  Espace vendeur</a>
                         </div>
                     </div>
                 </div>
@@ -170,7 +167,7 @@
                                 </div>
                                 <div class="site-footer__top-right-phone">
                                     <p class="site-footer__top-right-phone-tagline">Appelez-nous</p>
-                                    <a href="https://wa.me/+237676423188">(+237) 676 42 31 88 </a> 
+                                    <a href="https://wa.me/+237676423188"> <i class="fab fa-whatsapp" style="margin-right: 5px"></i><i class="fa fa-phone mr-2"></i> (+237) 676 42 31 88 </a> 
                                 </div>
                             </div>
                         </div>
@@ -221,8 +218,8 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="{{route('home')}}" aria-label="logo image"><img src="{{asset('assets/images/resources/logo.png')}}" width="155"
-                        alt="" /></a>
+                <a href="{{route('home')}}" aria-label="logo image"><img src="{{asset('assets/images/resources/logo-white.png')}}" width="155"
+                        alt="CNIC SARL" /></a>
             </div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container"></div>
@@ -236,7 +233,7 @@
                 <li>
                     <i class="fa fa-phone-alt"></i>
                     <a href="https://wa.me/+237676423188">
-                        (+237) 676 42 31 88 </a> - <a href="https://wa.me/+237693918018">(+237) 693 91 80 18
+                        (+237) 676 42 31 88  <br> (+237) 693 91 80 18
                         
                         </a>
                 </li>
@@ -303,6 +300,29 @@
 
     <!-- template js -->
     <script src="{{asset('assets/js/conult.js')}}"></script>
+    <script src="{{asset('assets/js/noty.js')}}"></script>
+
+    <script>
+        @if ($errors->any())
+              var message = "{{ $errors->all()[0] }}"
+              new Noty({
+                  type: 'error',
+                  text: message,
+                  timeout: 7000,
+                  killer: true
+              }).show();
+          @endif
+    
+          @if(session()->has('success'))
+          var message = "{{ session('success') }}"
+              new Noty({
+                  type: 'success',
+                  text: message,
+                  timeout: 5000,
+                  killer: true
+              }).show();
+          @endif
+    </script>
     @yield('scripts')
 </body>
 

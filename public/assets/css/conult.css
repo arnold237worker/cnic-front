@@ -97,6 +97,18 @@ ul {
   overflow: hidden;
 }
 
+.result-card {
+  width: 50%; 
+  margin: auto; 
+  border: 1px solid #eee; 
+  background: #eee; 
+  padding: 20px  
+}
+
+.result-card i {
+  font-size: 50px;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -979,7 +991,28 @@ ul {
   display: block;
   float: left;
   padding: 36px 0;
-  margin-right: 200px;
+  margin-right: 120px;
+}
+
+.espace-vendeur-link{
+  display: none;
+}
+
+.service-img {
+  width: 100%; 
+  height: 500px; 
+  object-fit: cover
+}
+
+.cnic-img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.espace-btn {
+  background-color: #009CD3;
+  padding: 10px
 }
 
 .main-menu-two__wrapper-main-menu {
@@ -1007,6 +1040,7 @@ ul {
   bottom: -8px;
   left: -40px;
   content: "";
+  
   background-color: #c9d5db;
   width: 1px;
 }
@@ -2321,8 +2355,8 @@ ul {
 .about-one {
   position: relative;
   display: block;
-  padding: 0 0 120px;
-  margin: 100px 0 100px 0;
+  padding: 0 0 50px;
+  margin: 100px 0 0 0;
 }
 
 .about-one__left {
@@ -4016,7 +4050,7 @@ ul {
 }
 
 .site-footer__top-right-phone>a {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--conult-white);
   -webkit-transition: all 500ms ease;
@@ -6058,7 +6092,7 @@ ul {
   color: var(--conult-base);
   line-height: 34px;
   font-weight: 400;
-  font-family: var(--conult-reey-font);
+  /* font-family: var(--conult-reey-font); */
   margin-top: 37px;
   margin-bottom: 49px;
 }
@@ -7407,6 +7441,7 @@ ul {
   font-weight: 500;
   line-height: 36px;
   margin-left: 30px;
+  text-align: justify !important;
 }
 
 .service-details__how-we-help {
@@ -7596,7 +7631,7 @@ ul {
   position: relative;
   display: block;
   border: none;
-  height: 430px;
+  height: 300px;
   width: 100%;
 }
 
@@ -7642,7 +7677,7 @@ ul {
 .contact-page-details__sign {
   font-size: 24px;
   color: var(--conult-base);
-  font-family: var(--conult-reey-font);
+  /* font-family: var(--conult-reey-font); */
   line-height: 34px;
   margin-top: 36px;
 }

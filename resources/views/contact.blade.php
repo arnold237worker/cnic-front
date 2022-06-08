@@ -40,7 +40,7 @@
                         <div class="contact-page-details__content-text-box">
                             <p class="contact-page-details__content-text-1">Pour toutes vos préoccupations, remarques ou suggestions vous pouvez nous laisser un message.</p>
                             <p class="contact-page-details__content-text-2">Nous prendrons plaisir à vous répondre dans les plus bref délai.</p>
-                            <h2 class="contact-page-details__sign">CNIC</h2>
+                            <h2 class="contact-page-details__sign">CNIC SARL</h2>
                         </div>
                     </div>
                 </div>

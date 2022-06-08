@@ -228,6 +228,10 @@
         margin: 0 auto 50px;
     }
 
+    .espace-vendeur-link{
+        display: block;
+      }
+
     .about-one__right {
         max-width: 600px;
         margin: 0 auto;
@@ -452,6 +456,10 @@
     .section-title__title {
         font-size: 30px;
         line-height: 40px;
+    }
+
+    .espace-vendeur-link{
+        display: block;
     }
 
     .feature-one__icon-box {

@@ -18,5 +18,9 @@ Route::get('/contactez-nous', 'HomeController@contact')->name('contact');
 Route::get('/qui-sommes-nous', 'HomeController@about')->name('about');
 Route::get('/devenir-vendeur', 'HomeController@vendeur')->name('vendeur');
 Route::get('/service/{nom}', 'HomeController@service')->name('service');
-
+Route::post('/do-devenir-vendeur', 'HomeController@devenir_vendeur')->name('devenir-vendeur');
+Route::post('/payment/return', 'HomeController@return')->name('returnUrl');
+Route::post('/payment/notify', 'HomeController@notify')->name('notifyUrl');
+Route::get('/service/{nom}', 'HomeController@service')->name('service');
+Route::get('/payement/result', 'HomeController@result')->name('result');
 
