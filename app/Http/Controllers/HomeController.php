@@ -7,6 +7,8 @@ use CinetPay\CinetPay;
 use Exception;
 use App\Models\User;
 use App\Models\Service;
+use Mail;
+use App\Models\Abonnement;
 
 class HomeController extends Controller
 {
@@ -203,8 +205,26 @@ class HomeController extends Controller
                 if ($cp->isValidPayment()) {
                     print "notify";
                     if($user){
+                        //update user status
                         $user->statut = "SUCCESS";
                         $user->save();
+
+                        //Register abonnement
+                        $abonnement = new Abonnement();
+                        $abonnement->code = uniqid();
+                        $abonnement->expired_at = date('Y-m-d H:i:s', strtotime('+1 year'));
+                        $abonnement->user_id = $user->id;
+                        $abonnement->save();
+
+                        $data = [
+                            "nom" => $user->nom,
+                            "email" => $user->email
+                        ];
+
+                        Mail::send('emails.registration', $data, function ($message) use ($data) {
+                            $message->to($data['email'], $data['nom'])->subject("Inscription au CNIC");
+                            $message->from('contact@cnic.cm', "CNIC SARL");
+                        });
                     }
                     die();
                 } else {
