@@ -16,18 +16,6 @@
     </div>
 </section>
 <!--Page Header End-->
-
-@if(session('PAYMENT_STATUS') == "FAILED")
-<section class="contact-page-google-map">
-    <div class="container text-center result-card ">
-        <i class="fa fa-times-circle text-danger"></i>
-        <h2>ECHEC</h2>
-        <p>Nous n'avons pas pu procéder à la création de votre compte vendeur sur la plateforme du Claudel Noubissie International Consulting.<br> <strong>Motif: Echec du payement.</strong> </p>
-        <a href=" {{route('vendeur')}} "  class="thm-btn contact-one__btn" >Réessayer</a>
-        <br>
-     </div>
- </section>
-@elseif(session('PAYMENT_STATUS') == "SUCCESS")
  <section class="contact-page-google-map">
     <div class="container text-center result-card ">
         <i class="fa fa-check-circle text-success"></i>
@@ -37,7 +25,6 @@
         <br>
      </div>
  </section>
-@endif
 
 @endsection
 

@@ -58,6 +58,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/conult.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/noty.css?v1')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/conult-responsive.css')}}" />
+    <script src="https://cdn.cinetpay.com/seamless/main.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -123,12 +124,12 @@
                                     <li class="@if(session('page') == "about") current @endif"><a href="{{route('about')}}">Qui sommes-nous ?</a></li>
                                     <li class="@if(session('page') == "contact") current @endif"><a href="{{route('contact')}}">Contactez-Nous</a></li>
                                     <li class="@if(session('page') == "vendeur") current @endif"><a href="{{route('vendeur')}}">Devenir vendeur</a></li>
-                                    <li class="espace-vendeur-link"><a href="{{env('BO_URL')}}">Espace vendeur</a></li>
+                                    <li class="espace-vendeur-link"><a href="  {{\config('app.bo_url')}} ">Espace vendeur</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="main-menu-two__wrapper-right" style="margin-top: -15px">
-                            <a href=" {{env('BO_URL')}}  " target="_blank" class="btn btn-primary btn-md espace-btn" >  Espace vendeur</a>
+                            <a href="{{\config('app.bo_url')}}" target="_blank" class="btn btn-primary btn-md espace-btn" >  Espace vendeur</a>
                         </div>
                     </div>
                 </div>
@@ -294,6 +295,9 @@
     <script src="{{asset('assets/vendors/vegas/vegas.min.js')}}"></script>
     <script src="{{asset('assets/vendors/jquery-ui/jquery-ui.js')}}"></script>
     <script src="{{asset('assets/vendors/timepicker/timePicker.js')}}"></script>
+
+    <script type="text/javascript" src="{{asset('assets/js/jquery.validate.min.js')}}"></script>
+	<script src="{{asset('assets/js/jquery-validation-message.js')}}"></script>
 
 
 

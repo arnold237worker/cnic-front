@@ -6206,13 +6206,14 @@ ul {
 .contact-one__input-box input[type="text"],
 .contact-one__input-box input[type="email"],
 .contact-one__input-box input[type="password"],
-.contact-one__input-box textarea {
+.contact-one__input-box textarea,
+.contact-one__input-box select {
   height: 63px;
   width: 100%;
   background-color: #edf3f6;
   border: none;
   outline: none;
-  margin-bottom: 10px;
+  margin-top: 10px;
   padding: 0 30px;
   font-size: 14px;
   color: var(--conult-gray);
@@ -6227,6 +6228,11 @@ ul {
 
 .contact-one__btn {
   border: none;
+}
+
+.form-has-error {
+  color: #F3B71E;
+  font-size: 12px;
 }
 
 /*--------------------------------------------------------------

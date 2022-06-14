@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Mail\Mailable;
+use App\Mail;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +25,17 @@ Route::post('/payment/return', 'HomeController@return')->name('returnUrl');
 Route::post('/payment/notify', 'HomeController@notify')->name('notifyUrl');
 Route::get('/service/{nom}', 'HomeController@service')->name('service');
 Route::get('/payement/result', 'HomeController@result')->name('result');
+Route::post('/enregistrer-vendeur', 'HomeController@enregistrer_vendeur')->name('enregistrer-vendeur');
+Route::get('/supprimer-vendeur/{id}', 'HomeController@supprimer_vendeur')->name('supprimer-vendeur');
 
+Route::get('send-mail', function () {
+   
+    $details = [
+        'title' => 'Mail from ItSolutionStuff.com',
+        'body' => 'This is for testing email using smtp'
+    ];
+   
+    \Mail::to('arnoldprosperfosso237@gmail.com')->send(new \App\Mail\MyTestMail($details));
+   
+    dd("Email is Sent.");
+});
