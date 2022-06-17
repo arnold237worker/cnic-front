@@ -83,34 +83,40 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="contact-page__form">
-                    <form action="assets/inc/sendemail.php" class="comment-one__form contact-form-validated" novalidate="novalidate">
+                    <form action="{{route('contact.send')}}" method="post" class="comment-one__form ">
+                        @csrf
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">
-                                    <input type="text" placeholder="Votre nom" name="name">
+                                    <input type="text" placeholder="Votre nom*" required name="name">
                                 </div>
                             </div>
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">
-                                    <input type="email" placeholder="Votre adresse email" name="email">
+                                    <input type="email" placeholder="Votre adresse email*" required name="email">
                                 </div>
                             </div>
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">
-                                    <input type="text" placeholder="Votre numéro de téléphone" name="phone">
+                                    <input type="text" placeholder="Votre numéro de téléphone"  name="telephone">
                                 </div>
                             </div>
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">
-                                    <input type="email" placeholder="Objet" name="Subject">
+                                    <input type="text" placeholder="Objet*" required name="objet">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="comment-form__input-box">
-                                    <textarea name="message" placeholder="Entrer votre message"></textarea>
+                                    <textarea name="message" required placeholder="Entrer votre message*"></textarea>
                                 </div>
+                                @if(config('services.recaptcha.key'))
+                                    <div class="g-recaptcha"
+                                        data-sitekey="{{config('services.recaptcha.key')}}">
+                                    </div>
+                                @endif
                                 <button type="submit" class="thm-btn comment-form__btn">Envoyer</button>
                             </div>
                         </div>
@@ -121,4 +127,8 @@
     </div>
 </section>
 <!--contact Page End-->
+@endsection
+
+@section('scripts')
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 @endsection

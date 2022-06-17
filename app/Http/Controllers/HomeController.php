@@ -7,8 +7,11 @@ use CinetPay\CinetPay;
 use Exception;
 use App\Models\User;
 use App\Models\Service;
+use App\Models\UserServiceProspection;
 use Mail;
 use App\Models\Abonnement;
+use App\Models\UserProspect;
+use Stripe;
 
 class HomeController extends Controller
 {
@@ -96,7 +99,7 @@ class HomeController extends Controller
     {
         $this->validate($request, [
             'nom' => 'required',
-            'email' => 'required|unique:users',
+            'email' => 'required',
             'phone' => 'required',
             'password' => 'required|min:6',
             'cpassword' => 'required|same:password|min:6'
@@ -107,83 +110,45 @@ class HomeController extends Controller
         ]);
 
         $inputs = $request->all();
-
-        $api_key = env("API_KEY");
-        $site_id = env("SITE_ID");
-        $id_transaction = CinetPay::generateTransId(); 
-        $description_du_paiement = sprintf('Vendeur du CNIC ', $id_transaction); 
-        $date_transaction = date("Y-m-d H:i:s"); 
-        $montant_a_payer = 100; 
-        $devise = 'XAF'; 
-        $identifiant_du_payeur = 'info@cnic.cm'; 
-        $formName = "goCinetPay"; 
-        $notify_url = route('notifyUrl'); 
-        $return_url = route('returnUrl');
-        $cancel_url = ''; 
-        // Configuration du bouton
-        $btnType = 2; 
-        $btnSize = 'large';
-        
-        $inputs['payment_id'] = $id_transaction;
         $inputs['password'] = bcrypt($inputs['password']);
         $inputs['type'] = "VENDEUR";
         try {
-            $cinetPay = new CinetPay($site_id, $api_key);
-            User::create($inputs);
-            $cinetPay->setTransId($id_transaction)
-                ->setDesignation($description_du_paiement)
-                ->setTransDate($date_transaction)
-                ->setAmount($montant_a_payer)
-                ->setCurrency($devise)
-                ->setDebug(true)
-                ->setCustom("")
-                ->setNotifyUrl($notify_url)
-                ->setReturnUrl($return_url)
-                ->setCancelUrl("")
-                ->displayPayButton($formName, $btnType, $btnSize);
+            $user = User::where('email', $inputs['email'])->first();
+            if($user == null){
+                $user =  User::create($inputs);
+            }
+
+            $stripe = Stripe::charges()->create([
+                'source' => $inputs['token'],
+                'currency' => 'EUR',
+                'amount' => 25 ,
+                'description' => 'Abonnement vendeur CNIC'
+            ]);
+
+            
+            if($stripe['status'] === "succeeded"){
+                if($user){
+                    //update user status
+                    $user->statut = "SUCCESS";
+                    $user->code_vendeur = uniqid();
+                    $user->save();
+
+                    //Register abonnement
+                    $abonnement = new Abonnement();
+                    $abonnement->code = uniqid();
+                    $abonnement->expired_at = date('Y-m-d H:i:s', strtotime('+1 year'));
+                    $abonnement->user_id = $user->id;
+                    $abonnement->save();
+
+                    $this->sendMail($user->nom, $user->email);
+                }
+                return redirect()->route('result')->withSuccess('Votre compte vendeur a été créé avec succès !');
+            }
+
+            return back()->withErrors(['message' => 'Le payment de votre abonnement a échoué !']);
+
         } catch (Exception $ex) {
             print $ex->getMessage();
-        }
-    }
-
-    public function return()
-    {
-        $id_transaction = $_POST['cpm_trans_id'];
-        $user = User::where('payment_id', $id_transaction)->first();
-        if (isset($_POST['cpm_trans_id']) || isset($_POST['token'])) {
-            try {
-                $api_key = env("API_KEY");
-                $site_id = env("SITE_ID");
-                $cinetPay = new CinetPay($site_id, $api_key);
-                $cinetPay->setTransId($id_transaction)->getPayStatus();
-
-                if ($cinetPay->isValidPayment()) {
-                    session(['PAYMENT_STATUS' => 'SUCCESS']);
-                    if($user){
-                        $user->statut = "SUCCESS";
-                        $user->save();
-                    }
-                } else {
-                    session(['PAYMENT_STATUS' => 'FAILED']);
-                    if($user){
-                        $user->delete();
-                    }
-                }
-                return redirect()->route('result');
-            } catch (Exception $e) {
-                dd($e->getMessage());
-                session(['PAYMENT_STATUS' => 'FAILED']);
-                if($user){
-                    $user->delete();
-                }
-                return redirect()->route('result');
-            }
-        } else {
-            session(['PAYMENT_STATUS' => 'FAILED']);
-            if($user){
-                $user->delete();
-            }
-            return redirect()->route('result');
         }
     }
 
@@ -203,10 +168,10 @@ class HomeController extends Controller
                 // Reprise exacte des bonnes données chez CinetPay
                 $cp->setTransId($id_transaction)->getPayStatus();
                 if ($cp->isValidPayment()) {
-                    print "notify";
                     if($user){
                         //update user status
                         $user->statut = "SUCCESS";
+                        $user->code_vendeur = uniqid();
                         $user->save();
 
                         //Register abonnement
@@ -216,15 +181,7 @@ class HomeController extends Controller
                         $abonnement->user_id = $user->id;
                         $abonnement->save();
 
-                        $data = [
-                            "nom" => $user->nom,
-                            "email" => $user->email
-                        ];
-
-                        Mail::send('emails.registration', $data, function ($message) use ($data) {
-                            $message->to($data['email'], $data['nom'])->subject("Inscription au CNIC");
-                            $message->from('contact@cnic.cm', "CNIC SARL");
-                        });
+                        $this->sendMail($user->nom, $user->email);
                     }
                     die();
                 } else {
@@ -243,5 +200,148 @@ class HomeController extends Controller
     public function result()
     {
         return view('result');
+    }
+
+    public function send_message(Request $request)
+    {
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required|email',
+            'message' => 'required',
+            'objet' => 'required',
+            'g-recaptcha-response' => 'required'
+        ], [
+            'required' => ':attribute est requis',
+            'recaptcha' => 'La vérification pour les robots est requise'
+        ]);
+
+        $input = $request->all();
+
+        $this->sendContactMail($input['name'], $input['email'], $input['telephone'], $input['objet'], $input['message']);
+
+        return back()->withSuccess('Votre message a été envoyé avec succès ! Un administrateur se fera le plaisir de vous répondre.');
+
+
+    }
+
+    public function prospection($code)
+    {
+        $user = User::where('code_vendeur', $code)->first();
+        $service = UserServiceProspection::where('user_id', $user->id)->first();
+        return view('prospection', compact('user', 'service'));
+    }
+
+    public function prospect(Request $request)
+    {
+        $this->validate($request, [
+            'nom' => 'required',
+            'email' => 'required',
+            'profession' => 'required',
+            'attentes' => 'required',
+            'pays' => 'required',
+            'user_id' => 'required',
+            'telephone' => 'required'
+        ], [
+            'required' => ':attribute est requis'
+        ]);
+
+        $inputs = $request->all();
+        try {
+            UserProspect::create($inputs);
+            return back()->withSuccess('Vous avez été enregistré avec succès !');
+
+        } catch (Exception $ex) {
+            return back()->withErrors(['message' => $ex->getMessage()]);
+        }
+    }
+
+    public function sendMail($name, $email)
+    {
+        $data['From'] = "contact@cnic.cm";
+        $data['To'] = $email;
+        $data['TemplateId'] = 28266760;
+        $data['TemplateModel'] = array(
+            "name" => $name,
+            "email" => $email
+        );
+
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://api.postmarkapp.com/email/withTemplate",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "POST",
+            CURLOPT_POSTFIELDS => json_encode($data),
+            CURLOPT_HTTPHEADER => array(
+                "Accept: application/json",
+                "Content-Type: application/json",
+                "X-Postmark-Server-Token: 8b2671a4-8e82-4d73-af8f-8c4c9b7a37c9"
+            ),
+        ));
+
+        $response = curl_exec($curl);
+        $error = curl_error($curl);
+
+        //dd($response);
+
+        curl_close($curl);
+
+        if ($error != "") {
+            return false;
+        }
+
+        return true;
+    }
+
+    public function sendContactMail($name, $email, $telephone, $objet, $message)
+    {
+        $data['From'] = "contact@cnic.cm";
+        $data['To'] = "contact@cnic.cm";
+        $data['TemplateId'] = 28275979;
+        $data['TemplateModel'] = array(
+            "name" => $name,
+            "objet" => $objet,
+            "email" => $email,
+            "email" => $email,
+            "telephone" => $telephone,
+            "message" => $message
+        );
+
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://api.postmarkapp.com/email/withTemplate",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "POST",
+            CURLOPT_POSTFIELDS => json_encode($data),
+            CURLOPT_HTTPHEADER => array(
+                "Accept: application/json",
+                "Content-Type: application/json",
+                "X-Postmark-Server-Token: 8b2671a4-8e82-4d73-af8f-8c4c9b7a37c9"
+            ),
+        ));
+
+        $response = curl_exec($curl);
+        $error = curl_error($curl);
+
+        //dd($response);
+
+        curl_close($curl);
+
+        if ($error != "") {
+            return false;
+        }
+
+        return true;
     }
 }

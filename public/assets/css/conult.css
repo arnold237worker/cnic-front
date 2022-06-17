@@ -1005,9 +1005,9 @@ ul {
 }
 
 .cnic-img {
-  width: 100%;
-  height: 700px;
-  object-fit: cover;
+  width: 90%;
+  height: 500px;
+  object-fit: contain;
 }
 
 .espace-btn {

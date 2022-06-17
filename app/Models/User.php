@@ -26,7 +26,10 @@ class User extends Authenticatable
         'adresse',
         'password',
         'payment_id',
-        'statut'
+        'statut',
+        'couverture',
+        'code_vendeur',
+        'last_connexion'
     ];
 
     /**

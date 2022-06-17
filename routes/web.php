@@ -27,3 +27,7 @@ Route::get('/service/{nom}', 'HomeController@service')->name('service');
 Route::get('/payement/result', 'HomeController@result')->name('result');
 Route::post('/enregistrer-vendeur', 'HomeController@enregistrer_vendeur')->name('enregistrer-vendeur');
 Route::get('/supprimer-vendeur/{id}', 'HomeController@supprimer_vendeur')->name('supprimer-vendeur');
+Route::post('send-message', 'HomeController@send_message')->name('contact.send');
+
+Route::get('vendeur/{code}/prospection', 'HomeController@prospection')->name('prospection');
+Route::post('prospect', 'HomeController@prospect')->name('prospect');

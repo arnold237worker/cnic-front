@@ -88,7 +88,7 @@
                     <div class="contact-one__form-box">
                         <h3>Vos informations personnelles</h3>
                         <br>
-                        <form method="post" class="contact-one__form " id="becomeSellerForm">
+                        <form method="post" action=" {{route('devenir-vendeur')}} " class="contact-one__form " id="becomeSellerForm">
                             @csrf
                             <div class="row">
                                 <div class="col-xl-12">
@@ -113,13 +113,13 @@
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="contact-one__input-box">
-                                        <input type="password" placeholder="Mot de passe *" required name="password" id="password">
-                                        <span style="font-size:12px"><input type="checkbox" id="toggle"> <span id="hide-show">Afficher mot de passe</span> </span>  
+                                        <input type="password" placeholder="Mot de passe *" class="password" required name="password" id="password">
+                                        <span style="font-size:12px"><input type="checkbox" id="toggle"> <span id="hide-show">Afficher mots de passe</span> </span>  
                                     </div>
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="contact-one__input-box">
-                                        <input type="password" placeholder="Confirmer mot de passe *" required name="cpassword" id="cpassword">
+                                        <input type="password" placeholder="Confirmer mot de passe *" class="password" required name="cpassword" id="cpassword">
                                     </div>
                                 </div>
                                 
@@ -133,6 +133,7 @@
                                         </select>
                                     </div>
                                 </div>
+                                <input type="hidden" name="token" id="token">
                             </div>
                             <br/>
                             <div class="row">
@@ -153,6 +154,7 @@
 
 @section('scripts')
 <script src="https://cdn.cinetpay.com/seamless/main.js"></script>
+<script src="https://checkout.stripe.com/checkout.js"> </script> 
 <style>
     .sdk {
         display: block;
@@ -168,7 +170,7 @@
 
     $(document).ready(function(){
          $('#toggle').click(function(){
-            $(this).is(':checked') ? $('#password').attr('type', 'text') : $('#password').attr('type', 'password');
+            $(this).is(':checked') ? $('.password').attr('type', 'text') : $('.password').attr('type', 'password');
         });
     });
     $("#submit").click(function(){
@@ -204,7 +206,7 @@
                     paiementMobile(data);
                 }
                 if(methode == "carte"){
-                    paiementCarte();
+                    paiementCarte(data);
                 }
                 if(methode == "paypal"){
                     paiementPaypal();
@@ -285,6 +287,25 @@
         });
         CinetPay.onError(function(data) {
             console.log(data);
+        });
+    }
+
+    function paiementCarte(user){
+        var handler = StripeCheckout.configure({
+            key: "{{config('services.stripe.published')}}", // your publisher key id
+            locale: "auto",
+            currency: "eur",
+            token: function(token) {
+                $("#token").val(token.id);
+                $("#submit").attr("disabled", "disabled");
+                $("#becomeSellerForm").submit();
+            }
+        });
+        handler.open({
+            name: 'vendeurs CNIC',
+            description: 'Abonnement vendeur CNIC',
+            amount: 25 * 100,
+            email: user.email
         });
     }
 </script>
