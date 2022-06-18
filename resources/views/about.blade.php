@@ -34,14 +34,19 @@
                     </div>
                 </div>
             </div>
+            
             <div class="col-xl-6">
                 <div class="work-together__right">
                     <div class="section-title text-left">
-                        <span class="section-title__tagline">à propos de nous</span>
+                        <span class="section-title__tagline">Qui sommes-nous ?</span>
                         <h2 class="section-title__title">CNIC SARL</h2>
                     </div>
-                    <p class="work-together__right-text">Claudel Noubissie International Consulting Sarl (CNIC Sarl) est un cabinet de conseil spécialisé en Conseil et assistance opérationnelle apportés aux entreprises et organisations, prestations intellectuelles et Lobbying.</p>
-                    <ul class="list-unstyled work-together__points">
+                    <p> <strong>Croissante</strong>, <strong>Efficacité</strong>, <strong>Rentabilité</strong> </p>
+                    <p class="work-together__right-text mb-1">Claudel Noubissie International Consulting Sarl (CNIC Sarl) est un cabinet de conseil spécialisé en Conseil et stratégie opérationnelle. Notre équipe intervient dans l’opérationnalisation des objectifs de communication, marketing et de lobbying de votre entreprise pour des résultats performants.</p>
+                    <h5 class="txt-primary mb-1">Nos résultats sont le fruit de notre expertise</h5>
+                    
+                    <p class="work-together__right-text">Toute action est mesurée et analysée en amont, afin de mettre sur pied une stratégie adaptée, qui répond à vos besoins de croissance. Nous implémentons pour vous des leviers de croissance,  qui permettront d’optimiser le positionnement de vos produits ou services à l’échelle international. </p>
+                    {{-- <ul class="list-unstyled work-together__points">
                         <li>
                             <div class="icon">
                                 <i class="fa fa-check"></i>
@@ -98,7 +103,7 @@
                                 <p>Gestion des relations publiques.</p>
                             </div>
                         </li>
-                    </ul>
+                    </ul> --}}
                     <div class="main-slider-three__video">
                         <div class="main-slider-three__video-link">
                             <a href="https://www.youtube.com/watch?v=BhFRQGjl1DU"
