@@ -235,6 +235,11 @@ class HomeController extends Controller
         return view('prospection', compact('user', 'service'));
     }
 
+    public function biographie()
+    {
+        return view('biographie');
+    }
+
     public function prospect(Request $request)
     {
         $this->validate($request, [
@@ -266,7 +271,8 @@ class HomeController extends Controller
         $data['TemplateId'] = 28266760;
         $data['TemplateModel'] = array(
             "name" => $name,
-            "email" => $email
+            "email" => $email,
+            "action_url" => config('app.bo_url')
         );
 
         $curl = curl_init();

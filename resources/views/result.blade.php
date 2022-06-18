@@ -21,7 +21,7 @@
         <i class="fa fa-check-circle text-success"></i>
         <h2>SUCCES</h2>
         <p>Votre compte vendeur a été créé avec succès.<br> <strong>Bienvenue dans la famille CNIC, une aventure palpitante nous attend...</strong> </p>
-        <a href=" {{env('BO_URL')}} "  class="thm-btn contact-one__btn" >Se connecter à l'espace vendeur</a>
+        <a href=" {{config('app.bo_url')}} "  class="thm-btn contact-one__btn" >Se connecter à l'espace vendeur</a>
         <br>
      </div>
  </section>

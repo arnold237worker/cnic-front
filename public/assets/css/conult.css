@@ -1010,6 +1010,14 @@ ul {
   object-fit: contain;
 }
 
+.mb-1 {
+  margin-bottom: 20px !important;
+}
+
+.txt-primary{
+  color: #009CD3 !important;
+}
+
 .espace-btn {
   background-color: #009CD3;
   padding: 10px
@@ -4323,7 +4331,7 @@ ul {
 }
 
 .work-together__right-text {
-  margin: 0;
+  text-align: justify !important;
 }
 
 .work-together__points {
@@ -5239,8 +5247,7 @@ ul {
 
 .real-world__left-text {
   font-weight: 700;
-  color: var(--conult-base);
-  margin: 0;
+  text-align: justify  !important;
 }
 
 .real-world__points {
@@ -5425,8 +5432,8 @@ ul {
 
 .real-world__counter-icon {
   position: relative;
-  height: 120px;
-  width: 120px;
+  height: 70px;
+  width: 70px;
   background-color: #edf3f6;
   display: flex;
   align-items: center;
@@ -6414,7 +6421,7 @@ ul {
 }
 
 .news-details__text-1 {
-  margin: 0;
+  text-align: justify !important;
   line-height: 36px;
 }
 
@@ -7540,8 +7547,8 @@ ul {
 }
 
 .get-to-know__text {
-  margin: 0;
-  padding-bottom: 30px;
+  text-align: justify !important;
+  padding-bottom: 10px;
 }
 
 .get-to-know__points {

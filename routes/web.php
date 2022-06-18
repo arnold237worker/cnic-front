@@ -31,3 +31,4 @@ Route::post('send-message', 'HomeController@send_message')->name('contact.send')
 
 Route::get('vendeur/{code}/prospection', 'HomeController@prospection')->name('prospection');
 Route::post('prospect', 'HomeController@prospect')->name('prospect');
+Route::get('biographie', 'HomeController@biographie')->name('biographie');

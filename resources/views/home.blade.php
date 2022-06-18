@@ -81,6 +81,58 @@
     </div>
 </section>
 <!--Main Slider End-->
+<!--Feature Two Start-->
+<section class="feature-two">
+    <div class="feature-two__top">
+        <div class="container">
+            <div class="feature-two__top-inner">
+                <p class="feature-two__top-text">La VENTE, notre LEITMOTIV car qu’importe ce que vous faites dans la vie, vous aurez besoin de vendre.</p>
+            </div>
+        </div>
+    </div>
+    <div class="feature-two__bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                    <!--Feature Two Single-->
+                    <div class="feature-two__single">
+                        <div class="feature-two__icon">
+                            <span class="icon-strategy"></span>
+                        </div>
+                        <div class="feature-two__content">
+                            <h4 class="feature-two__title"><a href="consumer-product.html">10 ans d'innovation</a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+                    <!--Feature Two Single-->
+                    <div class="feature-two__single">
+                        <div class="feature-two__icon">
+                            <span class="icon-consumer-behavior"></span>
+                        </div>
+                        <div class="feature-two__content">
+                            <h4 class="feature-two__title"><a href="financial-advice.html">Une communication sur mesure</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+                    <!--Feature Two Single-->
+                    <div class="feature-two__single">
+                        <div class="feature-two__icon">
+                            <span class="icon-point-of-sale"></span>
+                        </div>
+                        <div class="feature-two__content">
+                            <h4 class="feature-two__title"><a href="audit-marketing.html">La vente : notre ADN</a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Feature Two End-->
 
 
 <!--Work Together Start-->
@@ -92,9 +144,9 @@
                     data-wow-duration="2500ms">
                     <div class="work-together__img-box">
                         <div class="work-together__img-1">
-                            <img src="{{asset('assets/images/resources/about7.jpg')}}" style="width: 374px; height: 494px; object-fit: cover" alt="CNIC SARL">
+                            <img src="{{asset('assets/images/resources/about7.jpg')}}" style="width: 374px; height: 600px; object-fit: cover" alt="CNIC SARL">
                             <div class="work-together__img-2">
-                                <img src="{{asset('assets/images/resources/about2.jpg')}}" style="width: 374px; height: 494px; object-fit: contain"  alt="CNIC SARL">
+                                <img src="{{asset('assets/images/resources/about2.jpg')}}" style="width: 374px; height: 520px; object-fit: contain"  alt="CNIC SARL">
                             </div>
                         </div>
                     </div>
@@ -103,11 +155,15 @@
             <div class="col-xl-6">
                 <div class="work-together__right">
                     <div class="section-title text-left">
-                        <span class="section-title__tagline">à propos de nous</span>
+                        <span class="section-title__tagline">Qui sommes-nous ?</span>
                         <h2 class="section-title__title">CNIC SARL</h2>
                     </div>
-                    <p class="work-together__right-text">Claudel Noubissie International Consulting Sarl (CNIC Sarl) est un cabinet de conseil spécialisé en Conseil et assistance opérationnelle apportés aux entreprises et organisations, prestations intellectuelles et Lobbying.</p>
-                    <ul class="list-unstyled work-together__points">
+                    <p> <strong>Croissante</strong>, <strong>Efficacité</strong>, <strong>Rentabilité</strong> </p>
+                    <p class="work-together__right-text mb-1">Claudel Noubissie International Consulting Sarl (CNIC Sarl) est un cabinet de conseil spécialisé en Conseil et stratégie opérationnelle. Notre équipe intervient dans l’opérationnalisation des objectifs de communication, marketing et de lobbying de votre entreprise pour des résultats performants.</p>
+                    <h5 class="txt-primary mb-1">Nos résultats sont le fruit de notre expertise</h5>
+                    
+                    <p class="work-together__right-text">Toute action est mesurée et analysée en amont, afin de mettre sur pied une stratégie adaptée, qui répond à vos besoins de croissance. Nous implémentons pour vous des leviers de croissance,  qui permettront d’optimiser le positionnement de vos produits ou services à l’échelle international. </p>
+                    {{-- <ul class="list-unstyled work-together__points">
                         <li>
                             <div class="icon">
                                 <i class="fa fa-check"></i>
@@ -164,7 +220,7 @@
                                 <p>Gestion des relations publiques.</p>
                             </div>
                         </li>
-                    </ul>
+                    </ul> --}}
                     <div class="main-slider-three__video">
                         <div class="main-slider-three__video-link">
                             <a href="https://www.youtube.com/watch?v=BhFRQGjl1DU"
@@ -182,7 +238,6 @@
     </div>
 </section>
 <!--Work Together End-->
-
 
 <!--Services One Start-->
 <section class="services-one">
@@ -389,6 +444,62 @@
 </section>
 <!--Services One End-->
 
+<!--Real World Start-->
+<section class="real-world">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="real-world__left">
+                    <div class="section-title text-left">
+                        <span class="section-title__tagline">CNIC SARL</span>
+                        <h2 class="section-title__title">Equipe</h2>
+                    </div>
+                    <p class="real-world__left-text">Nous possédons une équipe disponible, performante et compétente, orientée RESULTAT. De plus, l’équipe possède une excellente capacité d’intervention opérationnelle et technique sur chaque mission attribuée.</p>
+                    
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="real-world__middle">
+                    <div class="real-world__img">
+                        <img src="{{asset('assets/images/resources/v1.jpg')}}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="real-world__counter-box">
+                    <ul class="list-unstyled real-world__counter">
+                        <li class="real-world__counter-single">
+                            <div class="real-world__counter-content">
+                                <p class="real-world__counter-text">Créativité</p>
+                            </div>
+                            <div class="real-world__counter-icon">
+                                <span class="icon-help"></span>
+                            </div>
+                        </li>
+                        <li class="real-world__counter-single">
+                            <div class="real-world__counter-content">
+                                <p class="real-world__counter-text">Innovation</p>
+                            </div>
+                            <div class="real-world__counter-icon">
+                                <span class="icon-customer-review"></span>
+                            </div>
+                        </li>
+                        <li class="real-world__counter-single">
+                            <div class="real-world__counter-content">
+                                <p class="real-world__counter-text">Originalité</p>
+                            </div>
+                            <div class="real-world__counter-icon">
+                                <span class="icon-consultant"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Real World End-->
+
 <!--CTA One Start-->
 <section class="cta-one cta-two">
     <div class="container">
@@ -407,6 +518,44 @@
     </div>
 </section>
 <!--CTA One End-->
+
+<!--Get To Know Start-->
+<section class="get-to-know" style="background-color: #edf3f6;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="get-to-know__left">
+                    <div class="section-title text-left">
+                        <h2 class="section-title__title">Dr. Claudel Noubissie</h2>
+                    </div>
+                    <p class="get-to-know__text">Médecin à la base, le docteur Claudel Noubissie est un acteur majeur de la scène
+                        économico-socio-culturelle africaine.
+                        ENTREPRENEUR, CONFÉRENCIER et FORMATEUR, il contribue au quotidien par ses
+                        œuvres à la création d'une nouvelle Afrique, une Afrique forte et indépendante!
+                        Auteur de 8 ouvrages à succès vendus à plus de 50.000 exemplaires et traitant différentes
+                        thématiques, il soigne des maux avec les mots.</p>
+
+                        <div class="about-one__bottom">
+                            <div class="about-one__btn-box">
+                                <a href="{{route('biographie')}}" class="thm-btn about-one__btn">Voir plus</a>
+                            </div>
+                            
+                        </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="get-to-know__right">
+                            <div class="get-to-know__img-2">
+                                <img src="{{asset('assets/images/resources/cn.jpg')}}" style="width: 100%; height: 600px; object-fit: cover" alt="">
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Get To Know End-->
+
+
 
 <!--About One Start-->
 <section class="about-one">
