@@ -227,6 +227,10 @@ class HomeController extends Controller
     public function prospection($code)
     {
         $user = User::where('code_vendeur', $code)->first();
+        if($user){
+            $user->vues = $user->vues+1;
+            $user->save();
+        }
         $service = UserServiceProspection::where('user_id', $user->id)->first();
         return view('prospection', compact('user', 'service'));
     }

@@ -29,7 +29,8 @@ class User extends Authenticatable
         'statut',
         'couverture',
         'code_vendeur',
-        'last_connexion'
+        'last_connexion',
+        'vues'
     ];
 
     /**
