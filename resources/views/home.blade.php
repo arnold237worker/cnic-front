@@ -299,7 +299,7 @@
             <div class="col-xl-4">
                 <div class="real-world__middle">
                     <div class="real-world__img">
-                        <img src="{{asset('assets/images/resources/v1.jpg')}}" alt="">
+                        <img src="{{asset('assets/images/resources/equipe.jpg')}}" alt="">
                     </div>
                 </div>
             </div>
@@ -364,9 +364,9 @@
             <div class="col-xl-6">
                 <div class="get-to-know__left">
                     <div class="section-title text-left">
-                        <h2 class="section-title__title">Dr. Claudel Noubissie</h2>
+                        <h2 class="section-title__title">Dr. Claudel NOUBISSIE</h2>
                     </div>
-                    <p class="get-to-know__text">Médecin à la base, le docteur Claudel Noubissie est un acteur majeur de la scène
+                    <p class="get-to-know__text">Médecin à la base, le docteur Claudel NOUBISSIE est un acteur majeur de la scène
                         économico-socio-culturelle africaine.
                         ENTREPRENEUR, CONFÉRENCIER et FORMATEUR, il contribue au quotidien par ses
                         œuvres à la création d'une nouvelle Afrique, une Afrique forte et indépendante!
@@ -410,7 +410,7 @@
                 <div class="about-one__right">
                     <div class="section-title text-left">
                         <span class="section-title__tagline">Rejoindre la CNIC</span>
-                        <h2 class="section-title__title">Pourqoui devenir vendeur ?</h2>
+                        <h2 class="section-title__title">Pourquoi devenir vendeur ?</h2>
                     </div>
                     
                     <div class="about-one__business-start">

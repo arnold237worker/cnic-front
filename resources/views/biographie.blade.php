@@ -7,7 +7,7 @@
     </div>
     <div class="container">
         <div class="page-header__inner">
-            <h2>Dr. Claudel Noubissie</h2>
+            <h2>Dr. Claudel NOUBISSIE</h2>
             <ul class="thm-breadcrumb list-unstyled">
                 <li><a href="{{route('home')}}">Accueil</a></li>
                 <li class="active">Biographie</li>
@@ -24,10 +24,10 @@
             <div class="col-xl-8 col-lg-7">
                 <div class="news-details__left">
                     <div class="news-details__content">
-                        <h3 class="news-details__title">Biographie du Docteur Claudel Noubissie</h3>
+                        <h3 class="news-details__title">Biographie du Docteur Claudel NOUBISSIE</h3>
                         <div class="news-details__text-1">
                             
-                            <p> Médecin à la base, le docteur Claudel Noubissie est un acteur majeur de la scène
+                            <p> Médecin à la base, le docteur Claudel NOUBISSIE est un acteur majeur de la scène
                             économico-socio-culturelle africaine.</p>
                             <p> ENTREPRENEUR, CONFÉRENCIER et FORMATEUR, il contribue au quotidien par ses
                             œuvres à la création d'une nouvelle Afrique, une Afrique forte et indépendante!

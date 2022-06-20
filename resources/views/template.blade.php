@@ -55,7 +55,7 @@
     <link rel="stylesheet" href="{{asset('assets/vendors/timepicker/timePicker.css')}}" />
 
     <!-- template styles -->
-    <link rel="stylesheet" href="{{asset('assets/css/conult.css?v1')}}" />
+    <link rel="stylesheet" href="{{asset('assets/css/conult.css?v2')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/noty.css?v1')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/conult-responsive.css')}}" />
     <script src="https://cdn.cinetpay.com/seamless/main.js" type="text/javascript"></script>

@@ -4118,7 +4118,8 @@ ul {
 }
 
 .feature-two__top-text {
-  color: #9aadbd;
+  color: #fff;
+  font-size: 20px;
   margin: 0;
 }
 
