@@ -23,7 +23,7 @@
         <p >Votre compte vendeur a été créé avec succès. </p>  
         <p style="text-align: justify !important">
          
-          Un courriel vous a été envoyé à votre adresse email. Veuillez vérifier l'onglet <strong>Promotions</strong> ou <strong>spams</strong> pour Google. Et ajouter l'adresse contact@cnic.cm dans votre liste blanche pour recevoir nos courriels dans votre boîte principale. 
+          Un courriel vous a été envoyé à votre adresse email. Veuillez vérifier l'onglet <strong>Promotions</strong> ou <strong>spams</strong> pour Gmail. Et ajouter l'adresse contact@cnic.cm dans votre liste blanche pour recevoir nos courriels dans votre boîte principale. 
           <br>
           <strong>Bienvenue dans la famille CNIC, une aventure palpitante nous attend...</strong> 
         </p>
