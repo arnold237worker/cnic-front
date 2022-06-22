@@ -40,7 +40,11 @@ class User extends Authenticatable
         'vues',
         'code_prospection',
         'is_in_sua',
-        'code_prospection_vendeur'
+        'code_prospection_vendeur',
+        'methode',
+        'tranche_age',
+        'experience',
+        'niveau_academique'
     ];
 
     /**

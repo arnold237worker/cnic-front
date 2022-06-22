@@ -283,17 +283,7 @@
             amount: 100,
             currency: 'XAF',
             channels: 'MOBILE_MONEY',
-            description: 'Abonnement vendeur CNIC',   
-             //Fournir ces variables pour le paiements par carte bancaire
-            customer_name: user.nom,//Le nom du client
-            customer_surname:"",//Le prenom du client
-            customer_email: user.email,//l'email du client
-            customer_phone_number: user.phone,//l'email du client
-            customer_address : user.adresse,//addresse du client
-            customer_city: "Yaoundé",// La ville du client
-            customer_country : "CM",// le code ISO du pays
-            customer_state : "CE",// le code ISO l'état
-            customer_zip_code : "06510", // code postal
+            description: 'Abonnement vendeur CNIC'
 
         });
         CinetPay.waitResponse(function(data) {
@@ -305,6 +295,7 @@
                   killer: true
                 }).show();
                 window.location.reload();
+                console.log(data);
             } else if (data.status == "ACCEPTED") {
                 new Noty({
                   type: 'success',
