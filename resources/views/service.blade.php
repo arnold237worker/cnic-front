@@ -28,7 +28,7 @@
                     </div>
                     <div class="service-details__content">
                         <h3 class="service-details__title">{{ $service->nom }}</h3>
-                        <p class="service-details__text-1">{{$service->description}}</p>
+                        <p class="service-details__text-1">{!! $service->description !!}</p>
                     </div>
                     @if ($service->livret)
                     <div class="service-details__bottom">
