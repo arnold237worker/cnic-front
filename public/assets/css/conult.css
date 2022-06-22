@@ -1457,7 +1457,7 @@ ul {
 
 .mobile-nav__content .logo-box {
   margin-bottom: 40px;
-  display: flex;
+  text-align: center !important;
 }
 
 .mobile-nav__close {

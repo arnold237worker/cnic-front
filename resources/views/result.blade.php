@@ -20,7 +20,13 @@
     <div class="container text-center result-card ">
         <i class="fa fa-check-circle text-success"></i>
         <h2>SUCCES</h2>
-        <p>Votre compte vendeur a été créé avec succès.<br> <strong>Bienvenue dans la famille CNIC, une aventure palpitante nous attend...</strong> </p>
+        <p >Votre compte vendeur a été créé avec succès. </p>  
+        <p style="text-align: justify !important">
+         
+          Un courriel vous a été envoyé à votre adresse email. Veuillez vérifier l'onglet <strong>Promotions</strong> ou <strong>spams</strong> pour Google. Et ajouter l'adresse contact@cnic.cm dans votre liste blanche pour recevoir nos courriels dans votre boîte principale. 
+          <br>
+          <strong>Bienvenue dans la famille CNIC, une aventure palpitante nous attend...</strong> 
+        </p>
         <a href=" {{config('app.bo_url')}} "  class="thm-btn contact-one__btn" >Se connecter à l'espace vendeur</a>
         <br>
      </div>

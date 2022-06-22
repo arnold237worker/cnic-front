@@ -131,6 +131,7 @@ class HomeController extends Controller
                     //update user status
                     $user->statut = "SUCCESS";
                     $user->code_vendeur = uniqid();
+                    $user->code_prospection = "VC".str_pad($user->id, 6, "0", STR_PAD_LEFT); 
                     $user->save();
 
                     //Register abonnement
@@ -172,6 +173,7 @@ class HomeController extends Controller
                         //update user status
                         $user->statut = "SUCCESS";
                         $user->code_vendeur = uniqid();
+                        $user->code_prospection = "VC".str_pad($user->id, 6, "0", STR_PAD_LEFT);        
                         $user->save();
 
                         //Register abonnement

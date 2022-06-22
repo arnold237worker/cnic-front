@@ -1,5 +1,5 @@
 @extends("template")
-
+    
 @section("content")
 <!--Page Header Start-->
 <section class="page-header">
@@ -35,7 +35,7 @@
                 <div class="about-one__right">
                     <div class="section-title text-left">
                         <span class="section-title__tagline">Rejoindre la CNIC</span>
-                        <h2 class="section-title__title">Pourqoui devenir vendeur ?</h2>
+                        <h2 class="section-title__title">Pourquoi devenir vendeur ?</h2>
                     </div>
                     
                     <div class="about-one__business-start">
@@ -50,7 +50,22 @@
                         NOUBISSIE International Consulting (CNIC)
                         <br><br>
                         Une aventure palpitante nous attend…</p>
+                        <br/>
+                        <div class="main-slider-three__video">
+                            <div class="main-slider-three__video-link">
+                                <a href="https://www.youtube.com/watch?v=TOUX3stbGIs"
+                                    class="video-popup">
+                                    <div class="main-slider-three__video-icon">
+                                        <span class="fas fa-play"></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <h5 class="main-slider-three__video-text">Regarder la vidéo</h5>
+                        </div>
                 </div>
+                
+                        
+                
             </div>
         </div>
     </div>
@@ -96,21 +111,26 @@
                                         <input type="text" required placeholder="Votre nom complet *" name="nom" id="nom" >
                                     </div>
                                 </div>
-                                <div class="col-xl-12">
+                                <div class="col-xl-6">
                                     <div class="contact-one__input-box">
                                         <input type="email" required placeholder="Votre adresse email*" name="email" id="email">
                                     </div>
                                 </div>
-                                <div class="col-xl-12">
+                                <div class="col-xl-6">
                                     <div class="contact-one__input-box">
                                         <input type="text" name="phone" required placeholder="Votre numéro de téléphone *" id="phone" >
                                     </div>
                                 </div>
                                 <div class="col-xl-12">
                                     <div class="contact-one__input-box">
-                                        <input type="text" placeholder="Votre adresse compléte" name="adresse" id="adresse">
+                                        <input id="country_selector" required  type="text" name="pays"> 
                                     </div>
                                 </div>
+                                {{-- <div class="col-xl-6">
+                                    <div class="contact-one__input-box">
+                                        <input type="text" placeholder="Votre adresse compléte" name="adresse" id="adresse">
+                                    </div>
+                                </div> --}}
                                 <div class="col-xl-6">
                                     <div class="contact-one__input-box">
                                         <input type="password" placeholder="Mot de passe *" class="password" required name="password" id="password">
@@ -125,6 +145,11 @@
                                 
                                 <div class="col-xl-12">
                                     <div class="contact-one__input-box">
+                                        <input type="text" placeholder="Code vendeur. Exemple: VCxxxxxx" name="code_prospection_vendeur" id="code_prospection_vendeur" >
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="contact-one__input-box">
                                         <select name="methode" id="methode" required>
                                             <option value="">Comment souhaitez-vous payer votre souscription ?*</option>
                                             <option value="mobile">Paiement mobile</option>
@@ -134,6 +159,7 @@
                                     </div>
                                 </div>
                                 <input type="hidden" name="token" id="token">
+                                
                             </div>
                             <br/>
                             <div class="row">
@@ -172,9 +198,14 @@
          $('#toggle').click(function(){
             $(this).is(':checked') ? $('.password').attr('type', 'text') : $('.password').attr('type', 'password');
         });
+
+        $("#country_selector").countrySelect({
+            defaultCountry: "cm",
+            defaultStyling:"inside"
+
+        });
     });
     $("#submit").click(function(){
-            
             $("#submit").attr("disabled", "disabled");
             let form = $("#becomeSellerForm");
             form.validate({
@@ -195,13 +226,13 @@
             });
             if(form.valid()){
                 let nom = $("#nom").val();
+                let pays = $("#country_selector").val();
                 let email = $("#email").val();
                 let phone = $("#phone").val();
-                let adresse = $("#adresse").val();
                 let methode = $("#methode").val();
                 let password = $("#password").val();
                 let cpassword = $("#cpassword").val();
-                let data = {nom: nom, email: email, phone: phone, adresse: adresse, methode: methode, password: password, cpassword: cpassword, _token: "{{ csrf_token() }}"};
+                let data = {nom: nom, email: email, phone: phone, methode: methode, password: password, cpassword: cpassword, pays: pays, _token: "{{ csrf_token() }}"};
                 if(methode == "mobile"){
                     paiementMobile(data);
                 }

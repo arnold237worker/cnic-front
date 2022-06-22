@@ -30,7 +30,17 @@ class User extends Authenticatable
         'couverture',
         'code_vendeur',
         'last_connexion',
-        'vues'
+        'ville',
+        'pays',
+        'motivation',
+        'profession',
+        'piece1',
+        'piece2',
+        'code_reinitialisation',
+        'vues',
+        'code_prospection',
+        'is_in_sua',
+        'code_prospection_vendeur'
     ];
 
     /**

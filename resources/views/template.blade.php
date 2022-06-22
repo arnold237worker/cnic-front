@@ -55,16 +55,14 @@
     <link rel="stylesheet" href="{{asset('assets/vendors/timepicker/timePicker.css')}}" />
 
     <!-- template styles -->
-    <link rel="stylesheet" href="{{asset('assets/css/conult.css?v2')}}" />
+    <link rel="stylesheet" href="{{asset('assets/css/conult.css?v3')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/noty.css?v1')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/conult-responsive.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/css/countrySelect.css')}}" />
     <script src="https://cdn.cinetpay.com/seamless/main.js" type="text/javascript"></script>
 </head>
 
 <body>
-    {{-- <div class="preloader">
-        <img class="preloader__image" width="100" src="{{asset('assets/images/resources/logo.png')}}" alt="CNIC SARL" />
-    </div> --}}
     <!-- /.preloader -->
     <div class="page-wrapper">
         <header class="main-header-two clearfix">
@@ -218,8 +216,8 @@
         <div class="mobile-nav__content">
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
-            <div class="logo-box">
-                <a href="{{route('home')}}" aria-label="logo image"><img src="{{asset('assets/images/resources/logo-white.png')}}" width="155"
+            <div class="logo-box" >
+                <a href="{{route('home')}}" class="text-center"  aria-label="logo image"><img src="{{asset('assets/images/resources/logo-white.png')}}" width="155"
                         alt="CNIC SARL" /></a>
             </div>
             <!-- /.logo-box -->
@@ -298,6 +296,7 @@
 
     <script type="text/javascript" src="{{asset('assets/js/jquery.validate.min.js')}}"></script>
 	<script src="{{asset('assets/js/jquery-validation-message.js')}}"></script>
+	<script src="{{asset('assets/js/countrySelect.js')}}"></script>
 
 
 
