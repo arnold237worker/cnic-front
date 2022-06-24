@@ -232,7 +232,8 @@
                 let methode = $("#methode").val();
                 let password = $("#password").val();
                 let cpassword = $("#cpassword").val();
-                let data = {nom: nom, email: email, phone: phone, methode: methode, password: password, cpassword: cpassword, pays: pays, _token: "{{ csrf_token() }}"};
+                let code_prospection_vendeur = $("#code_prospection_vendeur").val();
+                let data = {nom: nom, email: email, code_prospection_vendeur: code_prospection_vendeur, phone: phone, methode: methode, password: password, cpassword: cpassword, pays: pays, _token: "{{ csrf_token() }}"};
                 if(methode == "mobile"){
                     paiementMobile(data);
                 }
