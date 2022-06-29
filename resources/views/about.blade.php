@@ -41,7 +41,7 @@
                         <span class="section-title__tagline">Qui sommes-nous ?</span>
                         <h2 class="section-title__title">CNIC SARL</h2>
                     </div>
-                    <p> <strong>Croissante</strong>, <strong>Efficacité</strong>, <strong>Rentabilité</strong> </p>
+                    <p> <strong>Croissance</strong>, <strong>Efficacité</strong>, <strong>Rentabilité</strong> </p>
                     <p class="work-together__right-text mb-1">Claudel Noubissie International Consulting Sarl (CNIC Sarl) est un cabinet de conseil spécialisé en Conseil et stratégie opérationnelle. Notre équipe intervient dans l’opérationnalisation des objectifs de communication, marketing et de lobbying de votre entreprise pour des résultats performants.</p>
                     <h5 class="txt-primary mb-1">Nos résultats sont le fruit de notre expertise</h5>
                     
@@ -139,54 +139,166 @@
     </div>
 </section>
 <!--CTA One End-->
-<!--About One Start-->
-<section class="about-one">
+<!--Real World Start-->
+<section class="real-world">
     <div class="container">
         <div class="row">
-            <div class="col-xl-6">
-                <div class="about-one__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
-                    <div class="about-one__img">
-                        <img src="{{asset('assets/images/resources/v2.jpg')}}" alt="">
+            <div class="col-xl-4">
+                <div class="real-world__left">
+                    <div class="section-title text-left">
+                        <span class="section-title__tagline">CNIC SARL</span>
+                        <h2 class="section-title__title">Equipe</h2>
                     </div>
-                    <div class="about-one__shape">
-                        <img src="{{asset('assets/images/shapes/v2.jpg')}}" alt="">
+                    <p class="real-world__left-text">Nous possédons une équipe disponible, performante et compétente, orientée RESULTAT. De plus, l’équipe possède une excellente capacité d’intervention opérationnelle et technique sur chaque mission attribuée.</p>
+                    
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="real-world__middle">
+                    <div class="real-world__img">
+                        <img src="{{asset('assets/images/resources/equipe.jpg')}}" alt="">
                     </div>
                 </div>
             </div>
-            <div class="col-xl-6">
-                <div class="about-one__right">
-                    <div class="section-title text-left">
-                        <span class="section-title__tagline">Rejoindre la CNIC</span>
-                        <h2 class="section-title__title">Pourqoui devenir vendeur ?</h2>
-                    </div>
-                    
-                    <div class="about-one__business-start">
-                        <div class="about-one__business-start-icon">
-                            <span class="icon-verification"></span>
-                        </div>
-                        <p class="about-one__business-start-text">La vente est un métier noble, respectable, rentable.</p>
-                    </div>
-                    
-                    <br>
-                    <p class="about-one__right-text">Le CNIC vous offre un cadre idéal pour développer vos compétences de vendeurs grâce à des formations et des séances de coaching données par des vendeurs expérimentés. <br>Tu peux désormais rejoindre l’équipe des vendeurs du Claudel
-                        NOUBISSIE International Consulting (CNIC)
-                        <br><br>
-                        Une aventure palpitante nous attend…</p>
-                    <div class="about-one__bottom">
-                        <div class="about-one__btn-box">
-                            <a href="{{route('vendeur')}}" class="thm-btn about-one__btn">Devenez vendeur</a>
-                        </div>
-                        
-                        <div class="main-slider-three__video">
-                            <div class="main-slider-three__video-link">
-                                <a href="https://www.youtube.com/watch?v=BhFRQGjl1DU"
-                                    class="video-popup">
-                                    <div class="main-slider-three__video-icon">
-                                        <span class="fas fa-play"></span>
-                                    </div>
-                                </a>
+            <div class="col-xl-4">
+                <div class="real-world__counter-box">
+                    <ul class="list-unstyled real-world__counter">
+                        <li class="real-world__counter-single">
+                            <div class="real-world__counter-content">
+                                <p class="real-world__counter-text">Créativité</p>
                             </div>
-                            <h5 class="main-slider-three__video-text">Regarder</h5>
+                            <div class="real-world__counter-icon">
+                                <span class="icon-help"></span>
+                            </div>
+                        </li>
+                        <li class="real-world__counter-single">
+                            <div class="real-world__counter-content">
+                                <p class="real-world__counter-text">Innovation</p>
+                            </div>
+                            <div class="real-world__counter-icon">
+                                <span class="icon-customer-review"></span>
+                            </div>
+                        </li>
+                        <li class="real-world__counter-single">
+                            <div class="real-world__counter-content">
+                                <p class="real-world__counter-text">Originalité</p>
+                            </div>
+                            <div class="real-world__counter-icon">
+                                <span class="icon-consultant"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Real World End-->
+<!--Testimonial One Start-->
+<section class="testimonial-one">
+    <div class="testimonial-one-map"
+        style="background-image: url(assets/images/shapes/testimonial-one-map.png)"></div>
+    <div class="container">
+        <div class="section-title text-center">
+            <span class="section-title__tagline">Témoignages</span>
+            <h2 class="section-title__title">Ce qu'ils disent sur le CNIC</h2>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="testimonial-one__carousel owl-theme owl-carousel">
+                    <div class="testimonial-one__single">
+                        <p class="testimonial-one__rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p class="testimonial-one__text">
+                            La vente au CNIC me permet de générer entre 400.000 FCFA et 1.000.000F de commissions par mois depuis le début de mon aventure en novembre 2021. Si vous êtes audacieux, aimer les challenges et surtout persévérant alors vous ferez faire beaucoup mieux que moi.
+                        </p>
+                        <div class="testimonial-one__author">
+                            <div class="testimonial-one__author-img">
+                                <img src="{{asset('assets/images/partner/t04.png')}}" alt="Ruther Ford TSIMENE">
+                            </div>
+                            <div class="testimonial-one__author-details">
+                                <h4 class="testimonial-one__author-name">Ruther Ford TSIMENE</h4>
+
+                            </div>
+                        </div>
+                        <div class="testimonial-one__quote-icon">
+                            <img src="{{asset('assets/images/icon/quote-icon.png')}}" alt="">
+                        </div>
+                    </div>
+                    <!--Testimonial One Single-->
+                    <div class="testimonial-one__single">
+                        <p class="testimonial-one__rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p class="testimonial-one__text">Le CNIC pour moi est une maison familiale qui permet à ses enfants d’impacter en grandissant .</p>
+                        <div class="testimonial-one__author">
+                            <div class="testimonial-one__author-img">
+                                <img src="{{asset('assets/images/partner/t02.png')}}" alt="Saurelle NYOMA">
+                            </div>
+                            <div class="testimonial-one__author-details">
+                                <h4 class="testimonial-one__author-name">Saurelle NYOMA</h4>
+
+                            </div>
+                        </div>
+                        <div class="testimonial-one__quote-icon">
+                            <img src="{{asset('assets/images/icon/quote-icon.png')}}" alt="">
+                        </div>
+                    </div>
+                    <!--Testimonial One Single-->
+                    <div class="testimonial-one__single">
+                        <p class="testimonial-one__rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p class="testimonial-one__text">Duis rhoncus orci utedn metus rhoncus, non is dictum
+                            purus bibendum. Suspendisse id orci sit amet justo interdum hendrerit sagittis.</p>
+                        <div class="testimonial-one__author">
+                            <div class="testimonial-one__author-img">
+                                <img src="{{asset('assets/images/partner/t03.png')}}" alt="">
+                            </div>
+                            <div class="testimonial-one__author-details">
+                                <h4 class="testimonial-one__author-name">Arnold FOSSO</h4>
+
+                            </div>
+                        </div>
+                        <div class="testimonial-one__quote-icon">
+                            <img src="{{asset('assets/images/icon/quote-icon.png')}}" alt="">
+                        </div>
+                    </div>
+                    <!--Testimonial One Single-->
+                    <div class="testimonial-one__single">
+                        <p class="testimonial-one__rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p class="testimonial-one__text">Duis rhoncus orci utedn metus rhoncus, non is dictum
+                            purus bibendum. Suspendisse id orci sit amet justo interdum hendrerit sagittis.</p>
+                        <div class="testimonial-one__author">
+                            <div class="testimonial-one__author-img">
+                                <img src="{{asset('assets/images/partner/t01.png')}}" alt="">
+                            </div>
+                            <div class="testimonial-one__author-details">
+                                <h4 class="testimonial-one__author-name">Arnold FOSSO</h4>
+
+                            </div>
+                        </div>
+                        <div class="testimonial-one__quote-icon">
+                            <img src="{{asset('assets/images/icon/quote-icon.png')}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -194,5 +306,77 @@
         </div>
     </div>
 </section>
-<!--About One End-->
+<!--Testimonial One End-->
+
+<!--Brand One Start-->
+<section class="brand-one">
+    <div class="container">
+        <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 50, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
+            "0": {
+                "spaceBetween": 30,
+                "slidesPerView": 2
+            },
+            "375": {
+                "spaceBetween": 30,
+                "slidesPerView": 2
+            },
+            "575": {
+                "spaceBetween": 30,
+                "slidesPerView": 3
+            },
+            "767": {
+                "spaceBetween": 50,
+                "slidesPerView": 4
+            },
+            "991": {
+                "spaceBetween": 50,
+                "slidesPerView": 5
+            },
+            "1199": {
+                "spaceBetween": 50,
+                "slidesPerView": 5
+            }
+        }}'>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/01.png')}}" alt="startup academy">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/02.png')}}" alt="Startup school">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/03.png')}}" alt="La vitrine school">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/05.png')}}" alt="StartUp Factory">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/04.png')}}" alt="The factory">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/06.png')}}" alt="StartUp Motors">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/07.png')}}" alt="Medics Care">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/08.png')}}" alt="StartUp Cosmetics">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/09.png')}}" alt="StartUp">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/10.png')}}" alt="StartUp">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/11.png')}}" alt="StartUp">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/12.png')}}" alt="StartUp">
+                </div><!-- /.swiper-slide -->
+            </div>
+        </div>
+    </div>
+</section>
+<!--Brand One End-->
 @endsection

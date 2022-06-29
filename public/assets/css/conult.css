@@ -991,7 +991,7 @@ ul {
   display: block;
   float: left;
   padding: 36px 0;
-  margin-right: 120px;
+  margin-right: 80px;
 }
 
 .espace-vendeur-link{
@@ -3128,7 +3128,7 @@ ul {
   position: relative;
   display: block;
   background-color: #edf3f6;
-  padding: 120px 0 494px;
+  padding: 120px 0 200px;
   z-index: 1;
 }
 
@@ -3722,7 +3722,7 @@ ul {
 .brand-one {
   position: relative;
   display: block;
-  padding: 118px 0 119px;
+  padding: 80px 0 80px;
   border-top: 1px solid #c9d5db;
 }
 
@@ -3741,12 +3741,14 @@ ul {
 .brand-one .swiper-slide img {
   -webkit-transition: 500ms;
   transition: 500ms;
-  opacity: 0.2;
-  max-width: 100%;
+  opacity: 0.9;
+  width: 210px;
+  height: 120px;
+  object-fit: contain;
 }
 
 .brand-one .swiper-slide img:hover {
-  opacity: 0.6;
+  opacity: 1;
 }
 
 /*--------------------------------------------------------------
@@ -4107,7 +4109,7 @@ ul {
 .feature-two__top {
   position: relative;
   display: block;
-  background-color: var(--conult-black);
+  background-color: var(--conult-blue);
   padding: 90px 0 156px;
 }
 
@@ -6096,13 +6098,13 @@ ul {
 }
 
 .contact-one__founder {
-  font-size: 24px;
+  font-size: 20px;
   color: var(--conult-base);
   line-height: 34px;
   font-weight: 400;
   /* font-family: var(--conult-reey-font); */
-  margin-top: 37px;
-  margin-bottom: 49px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-one__founder span {

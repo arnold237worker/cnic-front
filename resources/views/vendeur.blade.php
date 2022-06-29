@@ -83,7 +83,8 @@
                         <h2 class="section-title__title">Devenez vendeur</h2>
                     </div>
                     <p class="contact-one__text">Inscrivez-vous en tant que vendeur du Claudel Noubissie International Consulting et accéder à un espace dédié aux vendeurs contenant des formations inédites. </p>
-                    <h2 class="contact-one__founder"><span>Frais d'adhésion :</span> 10.000 FCFA (25€ hors du Cameroun)   </h2>
+                    <h3 class="contact-one__founder"><span>Frais d'adhésion :</span> 10.000 FCFA (25€ hors du Cameroun)   </h3>
+                    <h3 class="contact-one__founder"><span>Validité :</span> 12 mois  </h3>
                     <p>Les moyens de paiement disponibles</p>
                     <div class="contact-one__bottom">
                         <div class="contact-one__bottom-img">
@@ -93,7 +94,7 @@
                         </div>
                         <div class="contact-one__bottom-img">
                             <a href="javascript:void(0)" onclick="changeMethod('VISA')"><img src="{{asset('assets/images/resources/master.png')}}" class="paiement_img"  alt=""></a>
-                            <a href="javascript:void(0)" onclick="changeMethod('VISA')"><img src="{{asset('assets/images/resources/paypal.png')}}" class="paiement_img"  alt=""></a>
+                            {{-- <a href="javascript:void(0)" onclick="changeMethod('VISA')"><img src="{{asset('assets/images/resources/paypal.png')}}" class="paiement_img"  alt=""></a> --}}
                         </div>
                     </div>
                 </div>
@@ -118,7 +119,7 @@
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="contact-one__input-box">
-                                        <input type="text" name="phone" required placeholder="Votre numéro de téléphone *" id="phone" >
+                                        <input type="text" name="phone" required placeholder="Numéro de téléphone *" id="phone" >
                                     </div>
                                 </div>
                                 <div class="col-xl-12">
@@ -145,7 +146,7 @@
                                 
                                 <div class="col-xl-12">
                                     <div class="contact-one__input-box">
-                                        <input type="text" placeholder="Code vendeur. Exemple: VCxxxxxx" name="code_prospection_vendeur" id="code_prospection_vendeur" >
+                                        <input type="text" placeholder="Code vendeur. Exemple: VCxxxxxx (Facultatif)" name="code_prospection_vendeur" id="code_prospection_vendeur" >
                                     </div>
                                 </div>
                                 <div class="col-xl-12">
@@ -154,7 +155,7 @@
                                             <option value="">Comment souhaitez-vous payer votre souscription ?*</option>
                                             <option value="mobile">Paiement mobile</option>
                                             <option value="carte">Carte bancaire</option>
-                                            <option value="paypal">Paypal</option>
+                                            {{-- <option value="paypal">Paypal</option> --}}
                                         </select>
                                     </div>
                                 </div>

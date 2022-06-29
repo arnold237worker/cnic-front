@@ -36,7 +36,7 @@
             </div>
             <div class="swiper-slide">
                 <div class="image-layer"
-                    style="background-image: url(assets/images/backgrounds/bg2.jpg);">
+                    style="background-image: url(assets/images/backgrounds/bg1.jpg);">
                 </div>
                 <!-- /.image-layer -->
                 <div class="container">
@@ -51,9 +51,10 @@
                     </div>
                 </div>
             </div>
+            
             <div class="swiper-slide">
                 <div class="image-layer"
-                    style="background-image: url(assets/images/backgrounds/bg1.jpg);">
+                    style="background-image: url(assets/images/backgrounds/bg2.jpg);">
                 </div>
                 <!-- /.image-layer -->
                 <div class="container">
@@ -61,7 +62,7 @@
                         <div class="col-xl-12">
                             <div class="main-slider__content">
                                 <p>Claudel Noubissie International Consulting</p>
-                                <h2>Nul n'entre ici s'il <br>n'est vendeur</h2>
+                                <h2>Ensemble <br>plus puissant</h2>
                                 <a href="{{route('vendeur')}}" class="thm-btn">Devenez Vendeur</a>
                             </div>
                         </div>
@@ -100,7 +101,7 @@
                             <span class="icon-strategy"></span>
                         </div>
                         <div class="feature-two__content">
-                            <h4 class="feature-two__title"><a href="consumer-product.html">10 ans d'innovation</a>
+                            <h4 class="feature-two__title">10 ans d'innovation
                             </h4>
                         </div>
                     </div>
@@ -112,7 +113,7 @@
                             <span class="icon-consumer-behavior"></span>
                         </div>
                         <div class="feature-two__content">
-                            <h4 class="feature-two__title"><a href="financial-advice.html">Une communication sur mesure</a></h4>
+                            <h4 class="feature-two__title">Une communication sur mesure</h4>
                         </div>
                     </div>
                 </div>
@@ -123,7 +124,7 @@
                             <span class="icon-point-of-sale"></span>
                         </div>
                         <div class="feature-two__content">
-                            <h4 class="feature-two__title"><a href="audit-marketing.html">La vente : notre ADN</a>
+                            <h4 class="feature-two__title">La vente : notre ADN
                             </h4>
                         </div>
                     </div>
@@ -158,7 +159,7 @@
                         <span class="section-title__tagline">Qui sommes-nous ?</span>
                         <h2 class="section-title__title">CNIC SARL</h2>
                     </div>
-                    <p> <strong>Croissante</strong>, <strong>Efficacité</strong>, <strong>Rentabilité</strong> </p>
+                    <p> <strong>Croissance</strong>, <strong>Efficacité</strong>, <strong>Rentabilité</strong> </p>
                     <p class="work-together__right-text mb-1">Claudel Noubissie International Consulting Sarl (CNIC Sarl) est un cabinet de conseil spécialisé en Conseil et stratégie opérationnelle. Notre équipe intervient dans l’opérationnalisation des objectifs de communication, marketing et de lobbying de votre entreprise pour des résultats performants.</p>
                     <h5 class="txt-primary mb-1">Nos résultats sont le fruit de notre expertise</h5>
                     
@@ -395,6 +396,7 @@
 
 
 
+
 <!--About One Start-->
 <section class="about-one">
     <div class="container">
@@ -448,5 +450,76 @@
     </div>
 </section>
 <!--About One End-->
+<!--Brand One Start-->
+<section class="brand-one">
+    <div class="container">
+        <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 50, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
+            "0": {
+                "spaceBetween": 30,
+                "slidesPerView": 2
+            },
+            "375": {
+                "spaceBetween": 30,
+                "slidesPerView": 2
+            },
+            "575": {
+                "spaceBetween": 30,
+                "slidesPerView": 3
+            },
+            "767": {
+                "spaceBetween": 50,
+                "slidesPerView": 4
+            },
+            "991": {
+                "spaceBetween": 50,
+                "slidesPerView": 5
+            },
+            "1199": {
+                "spaceBetween": 50,
+                "slidesPerView": 5
+            }
+        }}'>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/01.png')}}" alt="startup academy">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/02.png')}}" alt="Startup school">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/03.png')}}" alt="La vitrine school">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/05.png')}}" alt="StartUp Factory">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/04.png')}}" alt="The factory">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/06.png')}}" alt="StartUp Motors">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/07.png')}}" alt="Medics Care">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/08.png')}}" alt="StartUp Cosmetics">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/09.png')}}" alt="StartUp">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/10.png')}}" alt="StartUp">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/11.png')}}" alt="StartUp">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/12.png')}}" alt="StartUp">
+                </div><!-- /.swiper-slide -->
+            </div>
+        </div>
+    </div>
+</section>
+<!--Brand One End-->
 <br/>
 @endsection

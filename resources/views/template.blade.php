@@ -55,7 +55,7 @@
     <link rel="stylesheet" href="{{asset('assets/vendors/timepicker/timePicker.css')}}" />
 
     <!-- template styles -->
-    <link rel="stylesheet" href="{{asset('assets/css/conult.css?v3')}}" />
+    <link rel="stylesheet" href="{{asset('assets/css/conult.css?v4')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/noty.css?v1')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/conult-responsive.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/countrySelect.css')}}" />
@@ -110,6 +110,7 @@
                                 <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                 <ul class="main-menu__list">
                                     <li class=" @if(session('page') == "home") current @endif"><a href="{{route('home')}}">Accueil</a></li>
+                                    <li class="@if(session('page') == "about") current @endif"><a href="{{route('about')}}">Qui sommes-nous ?</a></li>
                                     <li class="dropdown @if(session('page') == "service") current @endif">
                                         <a href="#">Services</a>
                                         <ul>
@@ -119,9 +120,9 @@
                                             
                                         </ul>
                                     </li>
-                                    <li class="@if(session('page') == "about") current @endif"><a href="{{route('about')}}">Qui sommes-nous ?</a></li>
+                                    <li class="@if(session('page') == "faq") current @endif"><a href="{{route('faq')}}">FAQ</a></li>
+                                    <li class="@if(session('page') == "vendeur") current @endif"><a href="{{route('vendeur')}}">Devenez vendeur</a></li>
                                     <li class="@if(session('page') == "contact") current @endif"><a href="{{route('contact')}}">Contactez-Nous</a></li>
-                                    <li class="@if(session('page') == "vendeur") current @endif"><a href="{{route('vendeur')}}">Devenir vendeur</a></li>
                                     <li class="espace-vendeur-link"><a href="  {{\config('app.bo_url')}} ">Espace vendeur</a></li>
                                 </ul>
                             </div>
@@ -180,8 +181,9 @@
                                                 <ul class="footer-widget__explore-list list-unstyled clearfix">
                                                     <li><a href="{{route('home')}}">Accueil</a></li>
                                                     <li><a href="{{route('about')}}">Qui sommes-nous ?</a></li>
+                                                    <li><a href="{{route('faq')}}">FAQ</a></li>
+                                                    <li><a href="{{route('vendeur')}}">Devenez vendeur</a></li>
                                                     <li><a href="{{route('contact')}}">Contactez-nous</a></li>
-                                                    <li><a href="{{route('vendeur')}}">Devenir Membre</a></li>
                                                 </ul>
                                             </div>
                                         </div>

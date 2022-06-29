@@ -40,6 +40,12 @@ class HomeController extends Controller
         return view('vendeur');
     }
 
+    public function faq()
+    {
+        session(['page' => 'faq']);
+        return view('faq');
+    }
+
     public function service($lien)
     {
         session(['page' => 'service']);
@@ -265,6 +271,7 @@ class HomeController extends Controller
             return back()->withErrors(['message' => $ex->getMessage()]);
         }
     }
+
 
     public function sendMail($name, $email)
     {
