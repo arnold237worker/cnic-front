@@ -1,5 +1,7 @@
 @extends("template")
-
+@section('title')
+    Claudel NOUBISSIE International Consulting SARL
+@endsection
 @section("content")
 <section class="main-slider main-slider-two">
     <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
@@ -160,7 +162,7 @@
                         <h2 class="section-title__title">CNIC SARL</h2>
                     </div>
                     <p> <strong>Croissance</strong>, <strong>Efficacité</strong>, <strong>Rentabilité</strong> </p>
-                    <p class="work-together__right-text mb-1">Claudel NOUBISSIE International Consulting Sarl (CNIC Sarl) est un cabinet de conseil spécialisé en Conseil et stratégie opérationnelle. Notre équipe intervient dans l’opérationnalisation des objectifs de communication, marketing et de lobbying de votre entreprise pour des résultats performants.</p>
+                    <p class="work-together__right-text mb-1">Claudel NOUBISSIE International Consulting Sarl (CNIC Sarl) est un cabinet de conseil spécialisé en conseil et stratégie opérationnelle. Notre équipe intervient dans l’opérationnalisation des objectifs de communication, marketing et de lobbying de votre entreprise pour des résultats performants.</p>
                     <h5 class="txt-primary mb-1">Nos résultats sont le fruit de notre expertise</h5>
                     
                     <p class="work-together__right-text">Toute action est mesurée et analysée en amont, afin de mettre sur pied une stratégie adaptée, qui répond à vos besoins de croissance. Nous implémentons pour vous des leviers de croissance,  qui permettront d’optimiser le positionnement de vos produits ou services à l’échelle international. </p>
@@ -347,7 +349,7 @@
             <div class="col-xl-12">
                 <div class="cta-one__inner">
                     <h2 class="cta-one__title">Rejoignez la grande communauté <br> des vendeurs du CNIC</h2>
-                    <a href="{{route('vendeur')}}" class="thm-btn cta-one__btn">Rejoignez-Nous dés maintenant</a>
+                    <a href="{{route('vendeur')}}" class="thm-btn cta-one__btn">Rejoignez-Nous dès maintenant</a>
                     <div class="cta-one__shape wow slideInLeft" data-wow-delay="100ms"
                         data-wow-duration="2500ms">
                         <img src="{{asset('assets/images/shapes/cta-one-shape.png')}}" alt="Rejoindre le CNIC">
@@ -421,11 +423,11 @@
                         <div class="about-one__business-start-icon">
                             <span class="icon-verification"></span>
                         </div>
-                        <p class="about-one__business-start-text">La vente est un métier noble, respectable, rentable.</p>
+                        <p class="about-one__business-start-text">La vente est un métier respectable et surtout RENTABLE.</p>
                     </div>
                     
                     <br>
-                    <p class="about-one__right-text">Le CNIC vous offre un cadre idéal pour développer vos compétences de vendeurs grâce à des formations et des séances de coaching données par des vendeurs expérimentés. <br>Tu peux désormais rejoindre l’équipe des vendeurs du Claudel
+                    <p class="about-one__right-text">Le CNIC vous offre un cadre idéal pour développer vos compétences de vendeurs grâce à des formations et des séances de coaching données par des vendeurs expérimentés. <br>Vous pouvez désormais rejoindre l’équipe des vendeurs du Claudel
                         NOUBISSIE International Consulting (CNIC)
                         <br><br>
                         Une aventure palpitante nous attend…</p>
@@ -505,7 +507,7 @@
         <div class="section-title text-center">
             
             <span class="section-title__tagline"></span>
-            <h2 class="section-title__title">Découvrez <br/> nos  meilleurs vendeurs</h2>
+            <h2 class="section-title__title">Découvrez le parcours <br/> nos  meilleurs vendeurs</h2>
         </div>
         <div class="row">
             <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
@@ -540,6 +542,10 @@
 <!--Brand One Start-->
 <section class="brand-one">
     <div class="container">
+        
+        <div class="section-title text-center">
+            <h2 class="section-title__title">Nos partenaires</h2>
+        </div>
         <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 50, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
             "0": {
                 "spaceBetween": 30,

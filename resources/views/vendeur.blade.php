@@ -1,5 +1,7 @@
 @extends("template")
-    
+@section('title')
+    CNIC SARL - Devenez vendeur
+@endsection
 @section("content")
 <!--Page Header Start-->
 <section class="page-header">
@@ -21,7 +23,7 @@
 <section class="about-one">
     <div class="container">
         <div class="row">
-            <div class="col-xl-6">
+            <div class="col-xl-5">
                 <div class="about-one__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                     <div class="about-one__img">
                         <img src="{{asset('assets/images/resources/v4.png')}}" style="width: 100%; height: 500px; object-fit: contain" alt="Deveenez vendeur">
@@ -31,7 +33,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-7">
                 <div class="about-one__right">
                     <div class="section-title text-left">
                         <span class="section-title__tagline">Rejoindre le CNIC</span>
@@ -42,7 +44,7 @@
                         <div class="about-one__business-start-icon">
                             <span class="icon-verification"></span>
                         </div>
-                        <p class="about-one__business-start-text">La vente est un métier noble, respectable, rentable.</p>
+                        <p class="about-one__business-start-text">La vente est un métier respectable et surtout RENTABLE.</p>
                     </div>
                     
                     <br>
@@ -51,17 +53,24 @@
                         <br><br>
                         Une aventure palpitante nous attend…</p>
                         <br/>
-                        <div class="main-slider-three__video">
-                            <div class="main-slider-three__video-link">
-                                <a href="https://www.youtube.com/watch?v=TOUX3stbGIs"
-                                    class="video-popup">
-                                    <div class="main-slider-three__video-icon">
-                                        <span class="fas fa-play"></span>
+                        <div class="about-one__bottom">
+                                <div class="about-one__btn-box">
+                                    <a href="{{asset('assets/livret.pdf')}}" download="livret.pdf" class="thm-btn about-one__btn">Livret du vendeur</a>
+                                </div>
+                                <div class="about-one__contact">
+                                    <div class="main-slider-three__video">
+                                        <div class="main-slider-three__video-link">
+                                            <a href="https://www.youtube.com/watch?v=TOUX3stbGIs"
+                                                class="video-popup">
+                                                <div class="main-slider-three__video-icon">
+                                                    <span class="fas fa-play"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <h5 class="main-slider-three__video-text"><a href="https://www.youtube.com/watch?v=TOUX3stbGIs"
+                                            class="video-popup">Regardez la vidéo </a> </h5>
                                     </div>
-                                </a>
-                            </div>
-                            <h5 class="main-slider-three__video-text"><a href="https://www.youtube.com/watch?v=TOUX3stbGIs"
-                                class="video-popup">Regarder la vidéo </a></h5>
+                                </div>
                         </div>
                 </div>
                 
@@ -230,7 +239,7 @@
             <div class="col-xl-12">
                 <div class="cta-one__inner">
                     <h2 class="cta-one__title">Rejoignez la grande communauté <br> des vendeurs du CNIC</h2>
-                    <a href="#formulaire-devenir-vendeur" class="thm-btn cta-one__btn">Rejoignez-Nous dés maintenant</a>
+                    <a href="#formulaire-devenir-vendeur" class="thm-btn cta-one__btn">Rejoignez-Nous dès maintenant</a>
                     <div class="cta-one__shape wow slideInLeft" data-wow-delay="100ms"
                         data-wow-duration="2500ms">
                         <img src="{{asset('assets/images/shapes/cta-one-shape.png')}}" alt="Rejoindre le CNIC">
@@ -293,6 +302,7 @@
     </div>
 </section>
 <!--News Three End-->
+<br>
 
 @endsection
 

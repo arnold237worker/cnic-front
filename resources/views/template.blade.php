@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Claudel NOUBISSIE International Consulting SARL</title>
+    <title> @yield("title") </title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{asset('assets/favicon/apple-icon-57x57.png')}}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{asset('assets/favicon/apple-icon-60x60.png')}}">
@@ -120,7 +120,7 @@
                                             
                                         </ul>
                                     </li>
-                                    {{-- <li class="@if(session('page') == "faq") current @endif"><a href="{{route('faq')}}">FAQ</a></li> --}}
+                                    <li class="@if(session('page') == "faq") current @endif"><a href="{{route('faq')}}">FAQ</a></li>
                                     <li class="@if(session('page') == "vendeur") current @endif"><a href="{{route('vendeur')}}">Devenez vendeur</a></li>
                                     <li class="@if(session('page') == "contact") current @endif"><a href="{{route('contact')}}">Contactez-Nous</a></li>
                                     <li class="espace-vendeur-link"><a href="  {{\config('app.bo_url')}} ">Espace vendeur</a></li>
@@ -178,7 +178,7 @@
                                                 <ul class="footer-widget__explore-list list-unstyled clearfix">
                                                     <li><a href="{{route('home')}}">Accueil</a></li>
                                                     <li><a href="{{route('about')}}">Qui sommes-nous ?</a></li>
-                                                    {{-- <li><a href="{{route('faq')}}">FAQ</a></li> --}}
+                                                    <li><a href="{{route('faq')}}">FAQ</a></li>
                                                     <li><a href="{{route('vendeur')}}">Devenez vendeur</a></li>
                                                     <li><a href="{{route('contact')}}">Contactez-nous</a></li>
                                                 </ul>

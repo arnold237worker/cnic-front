@@ -1,5 +1,7 @@
 @extends("template")
-
+@section('title')
+CNIC SARL - FAQ
+@endsection
 @section("content")
 <!--Page Header Start-->
 <section class="page-header">

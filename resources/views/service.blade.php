@@ -54,6 +54,7 @@
                         @endif
                     </div>
                 </div>
+                <br>
                 <!-- Modal HTML -->
                 <div id="myModal" class="modal fade" tabindex="-1">
                     <div class="modal-dialog">
@@ -85,7 +86,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xl-12">
-                                                <button type="submit" id="submit" class="thm-btn comment-form__btn close">Télécharger maintenant</button>
+                                                <button type="submit" id="submit" class="thm-btn comment-form__btn close">Téléchargez maintenant</button>
                                             </div>
                                         </div>
                                     </form>
@@ -124,7 +125,9 @@
 </section>
 <!--Service Details End-->
 @endsection
-
+@section('title')
+  {{$service->nom}}
+@endsection
 @section('scripts')
 <script>
     $(document).ready(function(){
@@ -161,7 +164,7 @@
                         const a = document.createElement('a');
                         a.style.display = 'none';
                         a.href=url;
-                        a.download="livret.pdf";
+                        a.download=" {{$service->nom}}.pdf";
                         a.target="_blank";
                         document.body.appendChild(a);
                         a.click();
