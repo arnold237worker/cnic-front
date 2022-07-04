@@ -991,7 +991,7 @@ ul {
   display: block;
   float: left;
   padding: 36px 0;
-  margin-right: 80px;
+  margin-right: 100px;
 }
 
 .espace-vendeur-link{
@@ -2364,7 +2364,7 @@ ul {
   position: relative;
   display: block;
   padding: 0 0 50px;
-  margin: 100px 0 0 0;
+  margin: 100px 0 100px 0;
 }
 
 .about-one__left {
@@ -2594,7 +2594,7 @@ ul {
 }
 
 .our-mission__title {
-  font-size: 60px;
+  font-size: 40px;
   color: var(--conult-white);
   font-weight: 700;
   line-height: 72px;
@@ -2821,6 +2821,7 @@ ul {
   position: relative;
   display: block;
   padding: 0 0 180px;
+  margin-top: 40px;
 }
 
 .case-one__container {
@@ -3100,8 +3101,9 @@ ul {
 }
 
 .cta-one__btn {
-  background-color: var(--conult-white);
-  color: var(--conult-blue);
+  background-color: var(--conult-blue);
+  color: var(--conult-white);
+  font-weight: 600;
 }
 
 .cta-one__shape {
@@ -3275,7 +3277,7 @@ ul {
 .counter-one {
   position: relative;
   display: block;
-  margin-top: -281px;
+  /* margin-top: -281px; */
   z-index: 1;
 }
 
@@ -3443,7 +3445,9 @@ ul {
 .news-one {
   position: relative;
   display: block;
-  padding: 120px 0 180px;
+  padding: 120px 0 10px;
+  margin-top: -200px; 
+  z-index: 9
 }
 
 .news-one__container {
@@ -4000,12 +4004,13 @@ ul {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+  margin-top: 10px;
 }
 
 .site-footer__top-right-social a {
   position: relative;
-  height: 47px;
-  width: 47px;
+  /* height: 47px;
+  width: 47px; */
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
@@ -4015,15 +4020,16 @@ ul {
   text-align: center;
   color: var(--conult-black);
   font-size: 15px;
-  background-color: var(--conult-white);
+  /* background-color: var(--conult-white); */
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   z-index: 1;
+  color: white;
 }
 
-.site-footer__top-right-social a:hover {
-  color: var(--conult-white);
-}
+/* .site-footer__top-right-social a:hover {
+  color: var(--conult-base);
+} */
 
 .site-footer__top-right-social a:before {
   position: absolute;
@@ -4154,7 +4160,7 @@ ul {
   position: relative;
   display: block;
   margin-top: -95px;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
 }
 
 .feature-two__single {
@@ -4597,7 +4603,7 @@ ul {
 .testimonial-two {
   position: relative;
   display: block;
-  margin-top: -120px;
+  /* margin-top: -120px; */
 }
 
 .testimonial-two__container {
@@ -4606,7 +4612,7 @@ ul {
   margin: 0 auto;
   max-width: 1410px;
   width: 100%;
-  background-color: var(--conult-black);
+  background-color: var(--conult-base);
   padding: 120px 0 116px;
   overflow: hidden;
 }
@@ -4617,7 +4623,7 @@ ul {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--conult-black);
+  background-color: var(--conult-blue);
   z-index: 1;
 }
 
@@ -4747,7 +4753,7 @@ ul {
 }
 
 .testimonial-two__text {
-  font-size: 26px;
+  font-size: 20px;
   color: var(--conult-white);
   font-weight: 500;
   line-height: 46px;
@@ -4771,7 +4777,7 @@ ul {
 
 .testimonial-two__clinet-title {
   font-size: 14px;
-  color: #9aadbd;
+  color: var(--conult-base);
   font-weight: 500;
   line-height: 22px;
   margin-left: 12px;
@@ -6011,8 +6017,7 @@ ul {
 .news-three {
   position: relative;
   display: block;
-  padding: 180px 0 90px;
-  margin-top: -60px;
+  padding: 80px 0 30px;
 }
 
 .news-three .section-title {
@@ -6027,7 +6032,7 @@ ul {
   left: 0;
   right: 0;
   height: 637px;
-  background-color: var(--conult-base);
+  /* background-color: var(--conult-blue); */
   z-index: -1;
 }
 
@@ -6047,24 +6052,24 @@ ul {
 }
 
 .news-three .section-title__tagline {
-  color: #b8e3fe;
+  color: var(--conult-grey);
 }
 
 .news-three .section-title__title {
-  color: var(--conult-white);
+  color: var(--conult-blue);
 }
 
 .news-three .section-title__tagline:before {
   left: 52%;
   transform: translateX(-50%);
-  background-color: var(--conult-white);
+  background-color: var(--conult-base);
 }
 
 .news-three .section-title__tagline:after {
   right: 52%;
   left: inherit;
   transform: translateX(-50%);
-  background-color: var(--conult-white);
+  background-color: var(--conult-base);
 }
 
 .news-three .news-one__single {
@@ -6081,7 +6086,7 @@ ul {
   position: relative;
   display: block;
   padding: 0 0 112px;
-  margin: 150px 0 50px 0;
+  margin: 80px 0 0 0;
 }
 
 .contact-one__left {

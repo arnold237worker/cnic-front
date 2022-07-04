@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Claudel Noubissie International Consulting SARL</title>
+    <title>Claudel NOUBISSIE International Consulting SARL</title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{asset('assets/favicon/apple-icon-57x57.png')}}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{asset('assets/favicon/apple-icon-60x60.png')}}">
@@ -23,7 +23,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{{asset('assets/favicon/ms-icon-144x144.png')}}">
     <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="Claudel Noubissie International Consulting" />
+    <meta name="description" content="Claudel NOUBISSIE International Consulting" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

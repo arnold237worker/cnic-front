@@ -221,7 +221,7 @@
 
                                         </p>
                                         <p style="line-height: 24px;margin-bottom:15px;">
-                                            Félicitations ! Vous êtes officiellement VENDEUR au Claudel Noubissie International Consulting (CNIC) 
+                                            Félicitations ! Vous êtes officiellement VENDEUR au Claudel NOUBISSIE International Consulting (CNIC) 
                                         </p>
                                         <p style="line-height: 24px;margin-bottom:15px;">
                                             Pour vous connecter sur la plateforme des vendeurs que voici => <a href="https://vendeur.cnic.cm">https://vendeur.cnic.cm</a>, utilisez les identifiants suivants :
@@ -272,13 +272,13 @@
                                         </p>
                                         <hr>
                                         <p style="line-height: 24px;margin-top:30px">
-                                            Claudel Noubissie International Consulting SARL (CNIC SARL) <br/>
+                                            Claudel NOUBISSIE International Consulting SARL (CNIC SARL) <br/>
                                             Yaoundé, Nouvelle Route Bastos, Immeuble Y Building <br>
                                             BP. Yaoundé <br>
                                             Cameroun <br>
                                             Tel.  <a href="tel:237676423188">Office 237 676423188 | 693918018</a>  <br>
                                             Email: <a href="mailto:contact@cnic.cm">contact@cnic.cm</a> <br>
-                                            Facebook & Youtube: Claudel Noubissie International Consulting <br>
+                                            Facebook & Youtube: Claudel NOUBISSIE International Consulting <br>
                                             <a href="www.cnic.cm">https://www.cnic.cm</a>
                                         </p>
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Claudel Noubissie International Consulting SARL</title>
+    <title>Claudel NOUBISSIE International Consulting SARL</title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{asset('assets/favicon/apple-icon-57x57.png')}}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{asset('assets/favicon/apple-icon-60x60.png')}}">
@@ -23,7 +23,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{{asset('assets/favicon/ms-icon-144x144.png')}}">
     <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="Claudel Noubissie International Consulting" />
+    <meta name="description" content="Claudel NOUBISSIE International Consulting" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -120,7 +120,7 @@
                                             
                                         </ul>
                                     </li>
-                                    <li class="@if(session('page') == "faq") current @endif"><a href="{{route('faq')}}">FAQ</a></li>
+                                    {{-- <li class="@if(session('page') == "faq") current @endif"><a href="{{route('faq')}}">FAQ</a></li> --}}
                                     <li class="@if(session('page') == "vendeur") current @endif"><a href="{{route('vendeur')}}">Devenez vendeur</a></li>
                                     <li class="@if(session('page') == "contact") current @endif"><a href="{{route('contact')}}">Contactez-Nous</a></li>
                                     <li class="espace-vendeur-link"><a href="  {{\config('app.bo_url')}} ">Espace vendeur</a></li>
@@ -155,20 +155,17 @@
                                 <div class="site-footer__top-logo-content">
                                     <a href="{{route('home')}}"><img src="{{asset('assets/images/resources/logo-white.png')}}" width="146"
                                             alt=""></a>
-                                    <p class="site-footer__top-text">Claudel Noubissie International Consulting Sarl (CNIC Sarl) est un cabinet de conseil spécialisé en Conseil et assistance opérationnelle apportés aux entreprises et organisations, prestations intellectuelles et Lobbying.</p>
+                                    <p class="site-footer__top-text">Claudel NOUBISSIE International Consulting Sarl (CNIC Sarl) est un cabinet de conseil spécialisé en conseil et assistance opérationnelle apportés aux entreprises et organisations, prestations intellectuelles et Lobbying.</p>
                                 </div>
-                            </div>
+                                <br>
                             
-                            <div class="site-footer__top-contact-details wow fadeInUp" data-wow-delay="400ms">
-                                <div class="site-footer__top-right-social">
-                                    <a href="https://www.facebook.com/cnicsarl/" target="_blank"><i class="fab fa-facebook"></i></a>
-                                    <a href="https://www.linkedin.com/in/drclaudelnoubissie?original_referer=https%3A%2F%2Fmaligah.com%2F" target="_blank"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://www.youtube.com/channel/UC-FwXrDxvr6gj8x6Kgu3Neg" target="_blank"><i class="fab fa-youtube"></i></a>
-                                </div>
-                                <div class="site-footer__top-right-phone">
-                                    <p class="site-footer__top-right-phone-tagline">Appelez-nous</p>
-                                    <a href="https://wa.me/+237676423188"> <i class="fab fa-whatsapp" style="margin-right: 5px"></i><i class="fa fa-phone mr-2"></i> (+237) 676 42 31 88 </a> 
-                                </div>
+                                {{-- <div class="site-footer__top-contact-details wow fadeInUp" data-wow-delay="400ms">
+                                    
+                                    <div class="site-footer__top-right-phone">
+                                        <p class="site-footer__top-right-phone-tagline">Appelez-nous</p>
+                                        <a href="https://wa.me/+237676423188"> <i class="fab fa-whatsapp" style="margin-right: 5px"></i><i class="fa fa-phone mr-2"></i> (+237) 676 42 31 88 </a> 
+                                    </div>
+                                </div> --}}
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6">
@@ -181,7 +178,7 @@
                                                 <ul class="footer-widget__explore-list list-unstyled clearfix">
                                                     <li><a href="{{route('home')}}">Accueil</a></li>
                                                     <li><a href="{{route('about')}}">Qui sommes-nous ?</a></li>
-                                                    <li><a href="{{route('faq')}}">FAQ</a></li>
+                                                    {{-- <li><a href="{{route('faq')}}">FAQ</a></li> --}}
                                                     <li><a href="{{route('vendeur')}}">Devenez vendeur</a></li>
                                                     <li><a href="{{route('contact')}}">Contactez-nous</a></li>
                                                 </ul>
@@ -193,6 +190,12 @@
                                                 <a href="mailto:noubissieclaudel@cnic237.com">noubissieclaudel@cnic237.com</a>
                                                 <p class="footer-widget__contact-text">Bastos - Yaoundé <br>
                                                     Y Building, 3ème étage</p>
+                                                    <p class="footer-widget__contact-text">(+237) 676 42 31 88</p>
+                                                <div class="site-footer__top-right-social">
+                                                    <a href="https://www.facebook.com/cnicsarl/" target="_blank"><i class="fab fa-facebook"></i></a>
+                                                    <a href="https://www.linkedin.com/in/drclaudelnoubissie?original_referer=https%3A%2F%2Fmaligah.com%2F" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                                    <a href="https://www.youtube.com/channel/UC-FwXrDxvr6gj8x6Kgu3Neg" target="_blank"><i class="fab fa-youtube"></i></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

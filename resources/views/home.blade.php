@@ -26,7 +26,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="main-slider__content">
-                                <p>Claudel Noubissie International Consulting</p>
+                                <p>Claudel NOUBISSIE International Consulting</p>
                                 <h2>Nul n'entre ici s'il <br>n'est vendeur</h2>
                                 <a href="{{route('vendeur')}}" class="thm-btn">Devenez Vendeur</a>
                             </div>
@@ -43,7 +43,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="main-slider__content">
-                                <p>Claudel Noubissie International Consulting</p>
+                                <p>Claudel NOUBISSIE International Consulting</p>
                                 <h2>Nul n'entre ici s'il <br>n'est vendeur</h2>
                                 <a href="{{route('vendeur')}}" class="thm-btn">Devenez Vendeur</a>
                             </div>
@@ -61,7 +61,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="main-slider__content">
-                                <p>Claudel Noubissie International Consulting</p>
+                                <p>Claudel NOUBISSIE International Consulting</p>
                                 <h2>Ensemble <br>plus puissant</h2>
                                 <a href="{{route('vendeur')}}" class="thm-btn">Devenez Vendeur</a>
                             </div>
@@ -98,10 +98,10 @@
                     <!--Feature Two Single-->
                     <div class="feature-two__single">
                         <div class="feature-two__icon">
-                            <span class="icon-strategy"></span>
+                            <span class="icon-help"></span>
                         </div>
                         <div class="feature-two__content">
-                            <h4 class="feature-two__title">10 ans d'innovation
+                            <h4 class="feature-two__title"><a href=" {{route('vendeur')}} ">Ensemble on est plus fort</a> 
                             </h4>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                             <span class="icon-consumer-behavior"></span>
                         </div>
                         <div class="feature-two__content">
-                            <h4 class="feature-two__title">Une communication sur mesure</h4>
+                            <h4 class="feature-two__title"><a href=" {{route('vendeur')}} ">Une communication sur mesure</a></h4>
                         </div>
                     </div>
                 </div>
@@ -124,7 +124,7 @@
                             <span class="icon-point-of-sale"></span>
                         </div>
                         <div class="feature-two__content">
-                            <h4 class="feature-two__title">La vente : notre ADN
+                            <h4 class="feature-two__title"><a href=" {{route('vendeur')}} ">La vente : notre ADN </a>
                             </h4>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                         <h2 class="section-title__title">CNIC SARL</h2>
                     </div>
                     <p> <strong>Croissance</strong>, <strong>Efficacité</strong>, <strong>Rentabilité</strong> </p>
-                    <p class="work-together__right-text mb-1">Claudel Noubissie International Consulting Sarl (CNIC Sarl) est un cabinet de conseil spécialisé en Conseil et stratégie opérationnelle. Notre équipe intervient dans l’opérationnalisation des objectifs de communication, marketing et de lobbying de votre entreprise pour des résultats performants.</p>
+                    <p class="work-together__right-text mb-1">Claudel NOUBISSIE International Consulting Sarl (CNIC Sarl) est un cabinet de conseil spécialisé en Conseil et stratégie opérationnelle. Notre équipe intervient dans l’opérationnalisation des objectifs de communication, marketing et de lobbying de votre entreprise pour des résultats performants.</p>
                     <h5 class="txt-primary mb-1">Nos résultats sont le fruit de notre expertise</h5>
                     
                     <p class="work-together__right-text">Toute action est mesurée et analysée en amont, afin de mettre sur pied une stratégie adaptée, qui répond à vos besoins de croissance. Nous implémentons pour vous des leviers de croissance,  qui permettront d’optimiser le positionnement de vos produits ou services à l’échelle international. </p>
@@ -231,7 +231,8 @@
                                 </div>
                             </a>
                         </div>
-                        <h5 class="main-slider-three__video-text">Vidéo de présentation</h5>
+                        <h5 class="main-slider-three__video-text"><a href="https://www.youtube.com/watch?v=BhFRQGjl1DU"
+                            class="video-popup">Vidéo de présentation </a> </h5>
                     </div>
                 </div>
             </div>
@@ -255,7 +256,7 @@
                 <div class="feature-one__single">
                     <div class="feature-one__img-box">
                         <div class="feature-one__img">
-                            <img src="{{$item->image}}" style="width: 100%; height: 350px; object-fit: cover" alt="">
+                            <img src="{{$item->image}}" style="width: 100%; height: 350px; object-fit: cover" alt="{{$item->nom}}">
                         </div>
                         <div class="feature-one__icon-box">
                             <div class="feature-one__icon-title-box">
@@ -300,7 +301,7 @@
             <div class="col-xl-4">
                 <div class="real-world__middle">
                     <div class="real-world__img">
-                        <img src="{{asset('assets/images/resources/equipe.jpg')}}" alt="">
+                        <img src="{{asset('assets/images/resources/equipe.jpg')}}" alt="Equipe du CNIC">
                     </div>
                 </div>
             </div>
@@ -346,10 +347,10 @@
             <div class="col-xl-12">
                 <div class="cta-one__inner">
                     <h2 class="cta-one__title">Rejoignez la grande communauté <br> des vendeurs du CNIC</h2>
-                    <a href="{{route('vendeur')}}" class="thm-btn cta-one__btn">Devenez Vendeur</a>
+                    <a href="{{route('vendeur')}}" class="thm-btn cta-one__btn">Rejoignez-Nous dés maintenant</a>
                     <div class="cta-one__shape wow slideInLeft" data-wow-delay="100ms"
                         data-wow-duration="2500ms">
-                        <img src="{{asset('assets/images/shapes/cta-one-shape.png')}}" alt="">
+                        <img src="{{asset('assets/images/shapes/cta-one-shape.png')}}" alt="Rejoindre le CNIC">
                     </div>
                 </div>
             </div>
@@ -385,7 +386,7 @@
             <div class="col-xl-6">
                 <div class="get-to-know__right">
                             <div class="get-to-know__img-2">
-                                <img src="{{asset('assets/images/resources/cn.jpg')}}" style="width: 100%; height: 600px; object-fit: cover" alt="">
+                                <img src="{{asset('assets/images/resources/cn.jpg')}}" style="width: 100%; height: 600px; object-fit: cover" alt="Dr Claudel NOUBISSIE">
                             </div>
                 </div>
             </div>
@@ -404,14 +405,15 @@
             <div class="col-xl-6">
                 <div class="about-one__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                     <div class="about-one__img">
-                        <img src="{{asset('assets/images/resources/v2.jpg')}}" class="cnic-img" alt="">
+                        <a href="https://www.youtube.com/watch?v=TOUX3stbGIs" class="video-popup">
+                        <iframe width="100%" height="600" src="https://www.youtube.com/embed/TOUX3stbGIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </a>
                     </div>
                 </div>
             </div>
             <div class="col-xl-6">
                 <div class="about-one__right">
                     <div class="section-title text-left">
-                        <span class="section-title__tagline">Rejoindre la CNIC</span>
+                        <span class="section-title__tagline">Rejoindre le CNIC</span>
                         <h2 class="section-title__title">Pourquoi devenir vendeur ?</h2>
                     </div>
                     
@@ -431,18 +433,6 @@
                         <div class="about-one__btn-box">
                             <a href="{{route('vendeur')}}" class="thm-btn about-one__btn">Devenez vendeur</a>
                         </div>
-                        
-                        <div class="main-slider-three__video">
-                            <div class="main-slider-three__video-link">
-                                <a href="https://www.youtube.com/watch?v=TOUX3stbGIs"
-                                    class="video-popup">
-                                    <div class="main-slider-three__video-icon">
-                                        <span class="fas fa-play"></span>
-                                    </div>
-                                </a>
-                            </div>
-                            <h5 class="main-slider-three__video-text">Regarder</h5>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -450,6 +440,103 @@
     </div>
 </section>
 <!--About One End-->
+
+<!--Our Mission Start-->
+<section class="our-mission">
+    <div class="our-mission-bg-box">
+        <div class="our-mission-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
+            style="background-image: url({{asset('assets/images/backgrounds/bg3.jpg')}} )"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="our-mission__inner">
+                    <h2 class="our-mission__title">Déjà plus de 1.000 vendeurs <br> à ce jour disponible pour vous servir.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Our Mission End-->
+
+<!--News One Start-->
+<section class="news-one">
+    <div class="news-one__container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="news-one__carousel owl-theme owl-carousel">
+                    <!--News One Single-->
+                    <div class="news-one__single">
+                        <div class="news-one__img">
+                            <img src="{{asset('assets/images/vendeurs/01.jpg')}}" alt="Vendeurs CNIC">
+                        </div>
+                    </div>
+                    <div class="news-one__single">
+                        <div class="news-one__img">
+                            <img src="{{asset('assets/images/vendeurs/02.jpg')}}" alt="Vendeurs CNIC">
+                        </div>
+                    </div>
+                    <div class="news-one__single">
+                        <div class="news-one__img">
+                            <img src="{{asset('assets/images/vendeurs/03.jpg')}}" alt="Vendeurs CNIC">
+                        </div>
+                    </div>
+                    <div class="news-one__single">
+                        <div class="news-one__img">
+                            <img src="{{asset('assets/images/vendeurs/04.jpg')}}" alt="Vendeurs CNIC">
+                        </div>
+                    </div>
+                    <div class="news-one__single">
+                        <div class="news-one__img">
+                            <img src="{{asset('assets/images/vendeurs/05.jpg')}}" alt="Vendeurs CNIC">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--News One End-->
+
+<!--News Three Start-->
+<section class="news-three">
+    <div class="news-three-bg"></div>
+    <div class="container">
+        <div class="section-title text-center">
+            
+            <span class="section-title__tagline"></span>
+            <h2 class="section-title__title">Découvrez <br/> nos  meilleurs vendeurs</h2>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                <!--News One Single-->
+                <div class="news-one__single">
+                    <div class="news-one__img">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/TjGThu_Agh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                <!--News One Single-->
+                <div class="news-one__single">
+                    <div class="news-one__img">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/g1bFRI5f4qU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                <!--News One Single-->
+                <div class="news-one__single">
+                    <div class="news-one__img">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/kW0yPZ9YsoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--News Three End-->
 <!--Brand One Start-->
 <section class="brand-one">
     <div class="container">

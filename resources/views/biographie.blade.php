@@ -34,12 +34,12 @@
                             Auteur de 8 ouvrages à succès vendus à plus de 50.000 exemplaires et traitant différentes
                             thématiques, il soigne des maux avec les mots.</p>
                             <p>
-                            Rompu à la tâche et pétri d'expérience, le docteur Claudel Noubissie a dispensé de 2016 à
+                            Rompu à la tâche et pétri d'expérience, le docteur Claudel NOUBISSIE a dispensé de 2016 à
                             nos jours plus de 600 conférences en Afrique et dans la diaspora. Sans oublier son
                             expertise unique apportée aux universités et aux grandes écoles.</p>
                             <p> Ses interventions originales et différenciées sont reconnues pour leur puissance et leur
                             capacité à tenir en haleine un auditoire. Des conférences dont on se souvient…
-                            Le docteur Noubissie est également fondateur de: <br>
+                            Le docteur NOUBISSIE est également fondateur de: <br>
                             *le CLAUDEL NOUBISSIE INTERNATIONAL CONSULTING(CNIC-SARL), un cabinet
                             spécialisé en conseil et assistance opérationnelle apportés aux entreprises et aux
                             organisations. <br>
@@ -59,17 +59,17 @@
                             Y <br>
                             *SM(Sur Mesure), est une marque de vêtements et accessoires de mode de qualité,
                             fabriqués en Afrique avec du matériel local. </p>
-                           <p> Docteur Claudel Noubissie, médecin atypique, un exemple africain de la détermination!
+                           <p> Docteur Claudel NOUBISSIE, médecin atypique, un exemple africain de la détermination!
                             Ses MESSAGES: </p>
                             <p> "Incontournable dans la vente, Incomparable dans les résultats…"
-                            "Seuls, nous irons peut- être plus vite…mais ENSEMBLE nous irons sûrement plus loin…"</p>
+                            "Seuls, nous irons peut-être plus vite…mais ENSEMBLE nous irons sûrement plus loin…"</p>
                             </div>
                         
                     </div>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-5">
-                <img src=" {{asset('assets/images/resources/cn.jpg')}} " style="width: 100%; height: auto; object-fit: cover" alt="Dr Claudel Noubissie">
+                <img src=" {{asset('assets/images/resources/cn.jpg')}} " style="width: 100%; height: auto; object-fit: cover" alt="Dr Claudel NOUBISSIE">
             </div>
         </div>
     </div>

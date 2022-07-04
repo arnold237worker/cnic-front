@@ -42,7 +42,7 @@
                         <h2 class="section-title__title">CNIC SARL</h2>
                     </div>
                     <p> <strong>Croissance</strong>, <strong>Efficacité</strong>, <strong>Rentabilité</strong> </p>
-                    <p class="work-together__right-text mb-1">Claudel Noubissie International Consulting Sarl (CNIC Sarl) est un cabinet de conseil spécialisé en Conseil et stratégie opérationnelle. Notre équipe intervient dans l’opérationnalisation des objectifs de communication, marketing et de lobbying de votre entreprise pour des résultats performants.</p>
+                    <p class="work-together__right-text mb-1">Claudel NOUBISSIE International Consulting Sarl (CNIC Sarl) est un cabinet de conseil spécialisé en Conseil et stratégie opérationnelle. Notre équipe intervient dans l’opérationnalisation des objectifs de communication, marketing et de lobbying de votre entreprise pour des résultats performants.</p>
                     <h5 class="txt-primary mb-1">Nos résultats sont le fruit de notre expertise</h5>
                     
                     <p class="work-together__right-text">Toute action est mesurée et analysée en amont, afin de mettre sur pied une stratégie adaptée, qui répond à vos besoins de croissance. Nous implémentons pour vous des leviers de croissance,  qui permettront d’optimiser le positionnement de vos produits ou services à l’échelle international. </p>
@@ -128,7 +128,7 @@
             <div class="col-xl-12">
                 <div class="cta-one__inner">
                     <h2 class="cta-one__title">Rejoignez la grande communauté <br> des vendeurs du CNIC</h2>
-                    <a href="{{route('vendeur')}}" class="thm-btn cta-one__btn">Devenez Vendeur</a>
+                    <a href="{{route('vendeur')}}" class="thm-btn cta-one__btn">Rejoignez-Nous dés maintenant</a>
                     <div class="cta-one__shape wow slideInLeft" data-wow-delay="100ms"
                         data-wow-duration="2500ms">
                         <img src="{{asset('assets/images/shapes/cta-one-shape.png')}}" alt="">
@@ -194,111 +194,75 @@
     </div>
 </section>
 <!--Real World End-->
-<!--Testimonial One Start-->
-<section class="testimonial-one">
-    <div class="testimonial-one-map"
-        style="background-image: url(assets/images/shapes/testimonial-one-map.png)"></div>
-    <div class="container">
-        <div class="section-title text-center">
-            <span class="section-title__tagline">Témoignages</span>
-            <h2 class="section-title__title">Ce qu'ils disent sur le CNIC</h2>
+<!--Testimonial Two Start-->
+<section class="testimonial-two">
+    <div class="testimonial-two__container">
+        <div class="testimonial-two-bg-box">
+            <div class="testimonial-two-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
+                style="background-image: url({{asset('assets/images/backgrounds/bg1.jpg')}})"></div>
         </div>
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="testimonial-one__carousel owl-theme owl-carousel">
-                    <div class="testimonial-one__single">
-                        <p class="testimonial-one__rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </p>
-                        <p class="testimonial-one__text">
-                            La vente au CNIC me permet de générer entre 400.000 FCFA et 1.000.000F de commissions par mois depuis le début de mon aventure en novembre 2021. Si vous êtes audacieux, aimer les challenges et surtout persévérant alors vous ferez faire beaucoup mieux que moi.
-                        </p>
-                        <div class="testimonial-one__author">
-                            <div class="testimonial-one__author-img">
-                                <img src="{{asset('assets/images/partner/t04.png')}}" alt="Ruther Ford TSIMENE">
-                            </div>
-                            <div class="testimonial-one__author-details">
-                                <h4 class="testimonial-one__author-name">Ruther Ford TSIMENE</h4>
+        <div class="testimonial-two-big-text">Témoignages</div>
+        <div class="testimonial-two-shape-1"><img src="{{asset('assets/images/shapes/testimonial-two-shape-1.png')}}" alt="shape1">
+        </div>
+        <div class="testimonial-two-shape-2 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
+            <img src="{{asset('assets/images/shapes/testimonial-two-shape-2.png')}}" alt="shape2">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="testimonial-two__slider">
+                        <div class="swiper-container" id="testimonials-two__thumb">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-two__img-holder">
+                                        <img src="{{asset('assets/images/partner/t01.png')}}" alt="Ruther Ford TSIMENE">
+                                    </div>
+                                </div><!-- /.swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-two__img-holder">
+                                        <img src="{{asset('assets/images/partner/t02.png')}}" alt="Saurelle NYOMA">
+                                    </div>
+                                </div><!-- /.swiper-slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-two__img-holder">
+                                        <img src="{{asset('assets/images/partner/t04.png')}}" alt="Daril KANDEU">
+                                    </div>
+                                </div><!-- /.swiper-slide -->
+                            </div><!-- /.swiper-wrapper -->
+                        </div>
 
+                        <div class="testimonials-two__main-content">
+                            <div class="swiper-container" id="testimonials-two__carousel">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-two__conent-box">
+                                            <p class="testimonial-two__text">La vente au CNIC me permet de générer entre 400.000 FCFA et 1.000.000F de commissions par mois depuis le début de mon aventure en novembre 2021. Si vous êtes audacieux, aimer les challenges et surtout persévérant alors vous ferez faire beaucoup mieux que moi.</p>
+                                            <div class="testimonial-two__client-details">
+                                                <h4 class="testimonial-two__client-name">Ruther Ford TSIMENE</h4>
+                                                <span class="testimonial-two__clinet-title">- Vendeur</span>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-two__conent-box">
+                                            <p class="testimonial-two__text">Le CNIC pour moi est une maison familiale qui permet à ses enfants d’impacter en grandissant .</p>
+                                            <div class="testimonial-two__client-details">
+                                                <h4 class="testimonial-two__client-name">Saurelle NYOMA</h4>
+                                                <span class="testimonial-two__clinet-title">- Vendeuse</span>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-two__conent-box">
+                                            <p class="testimonial-two__text">Depuis mon entrée au Claudel NOUBISSIE International Consulting (CNIC), j’ai pris le temps de faire mes classes. Aujourd’hui, je parviens grâce aux ventes à me faire un salaire fixe de 500 000 Fcfa et des commissions qui avoisinent des mois, la somme de 900 000 Fcfa. Rejoignez-nous afin qu’ENSEMBLE nous puissions bâtir une entreprise encore plus puissante.</p>
+                                            <div class="testimonial-two__client-details">
+                                                <h4 class="testimonial-two__client-name">Daril KANDEU</h4>
+                                                <span class="testimonial-two__clinet-title">- Vendeur</span>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.swiper-slide -->
+                                </div><!-- /.swiper-wrapper -->
                             </div>
-                        </div>
-                        <div class="testimonial-one__quote-icon">
-                            <img src="{{asset('assets/images/icon/quote-icon.png')}}" alt="">
-                        </div>
-                    </div>
-                    <!--Testimonial One Single-->
-                    <div class="testimonial-one__single">
-                        <p class="testimonial-one__rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </p>
-                        <p class="testimonial-one__text">Le CNIC pour moi est une maison familiale qui permet à ses enfants d’impacter en grandissant .</p>
-                        <div class="testimonial-one__author">
-                            <div class="testimonial-one__author-img">
-                                <img src="{{asset('assets/images/partner/t02.png')}}" alt="Saurelle NYOMA">
-                            </div>
-                            <div class="testimonial-one__author-details">
-                                <h4 class="testimonial-one__author-name">Saurelle NYOMA</h4>
-
-                            </div>
-                        </div>
-                        <div class="testimonial-one__quote-icon">
-                            <img src="{{asset('assets/images/icon/quote-icon.png')}}" alt="">
-                        </div>
-                    </div>
-                    <!--Testimonial One Single-->
-                    <div class="testimonial-one__single">
-                        <p class="testimonial-one__rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </p>
-                        <p class="testimonial-one__text">Duis rhoncus orci utedn metus rhoncus, non is dictum
-                            purus bibendum. Suspendisse id orci sit amet justo interdum hendrerit sagittis.</p>
-                        <div class="testimonial-one__author">
-                            <div class="testimonial-one__author-img">
-                                <img src="{{asset('assets/images/partner/t03.png')}}" alt="">
-                            </div>
-                            <div class="testimonial-one__author-details">
-                                <h4 class="testimonial-one__author-name">Arnold FOSSO</h4>
-
-                            </div>
-                        </div>
-                        <div class="testimonial-one__quote-icon">
-                            <img src="{{asset('assets/images/icon/quote-icon.png')}}" alt="">
-                        </div>
-                    </div>
-                    <!--Testimonial One Single-->
-                    <div class="testimonial-one__single">
-                        <p class="testimonial-one__rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </p>
-                        <p class="testimonial-one__text">Duis rhoncus orci utedn metus rhoncus, non is dictum
-                            purus bibendum. Suspendisse id orci sit amet justo interdum hendrerit sagittis.</p>
-                        <div class="testimonial-one__author">
-                            <div class="testimonial-one__author-img">
-                                <img src="{{asset('assets/images/partner/t01.png')}}" alt="">
-                            </div>
-                            <div class="testimonial-one__author-details">
-                                <h4 class="testimonial-one__author-name">Arnold FOSSO</h4>
-
-                            </div>
-                        </div>
-                        <div class="testimonial-one__quote-icon">
-                            <img src="{{asset('assets/images/icon/quote-icon.png')}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -306,7 +270,54 @@
         </div>
     </div>
 </section>
-<!--Testimonial One End-->
+<!--Testimonial Two End-->
+
+<!--Case Two Start-->
+<section class="case-two">
+    <div class="container">
+        <div class="section-title text-center">
+            <span class="section-title__tagline">Résultats de nos</span>
+            <h2 class="section-title__title">Meilleurs vendeurs</h2>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="case-two__carousel owl-theme owl-carousel">
+                    <!--Case Two Single-->
+                    <div class="case-one__single">
+                        <div class="case-one__img-box">
+                            <div class="case-one__img">
+                                <img src="{{asset('assets/images/vendeurs/06.jpg')}}" style="width: 100%; height: 400px; object-fit:contain" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-one__single">
+                        <div class="case-one__img-box">
+                            <div class="case-one__img">
+                                <img src="{{asset('assets/images/vendeurs/08.jpg')}}" style="width: 100%; height: 400px; object-fit:contain" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-one__single">
+                        <div class="case-one__img-box">
+                            <div class="case-one__img"> 
+                                <img src="{{asset('assets/images/vendeurs/07.jpg')}}" style="width: 100%; height: 400px; object-fit:contain" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-one__single">
+                        <div class="case-one__img-box">
+                            <div class="case-one__img">
+                                <img src="{{asset('assets/images/vendeurs/09.jpg')}}" style="width: 100%; height: 400px; object-fit:contain" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Case Two End-->
 
 <!--Brand One Start-->
 <section class="brand-one">

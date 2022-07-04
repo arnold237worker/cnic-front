@@ -30,17 +30,69 @@
                         <h3 class="service-details__title">{{ $service->nom }}</h3>
                         <p class="service-details__text-1">{!! $service->description !!}</p>
                     </div>
-                    @if ($service->livret)
-                    <div class="service-details__bottom">
-                        <a href=" {{$service->livret}} " download=" {{$service->nom}}.pdf " target="_blank">
-                            <div class="service-details__bottom-icon">
-                                <img src="{{asset('assets/images/resources/pdf.png')}}" width="100" alt="">
-                                
-                            <p class="service-details__bottom-text">Télécharger le livret pour en savoir plus.</p>
+                    <div class="about-one__bottom">
+                        @if ($service->livret)
+                            <div class="about-one__btn-box">
+                                <a href="javascript:void(0);" class="thm-btn about-one__btn download-livret" data-toggle="modal" data-target="#myModal">Télécharger le livret</a>
                             </div>
-                        </a>
+                        @endif
+                        @if ($service->video)
+                            <div class="about-one__contact">
+                                <div class="main-slider-three__video">
+                                    <div class="main-slider-three__video-link">
+                                        <a href="{{$service->video}}"
+                                            class="video-popup">
+                                            <div class="main-slider-three__video-icon">
+                                                <span class="fas fa-play"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h5 class="main-slider-three__video-text"><a href="{{$service->video}}"
+                                        class="video-popup">Vidéo de présentation </a> </h5>
+                                </div>
+                            </div>
+                        @endif
                     </div>
-                    @endif
+                </div>
+                <!-- Modal HTML -->
+                <div id="myModal" class="modal fade" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Télécharger le livret</h5>
+                                <button type="button" class="close btn btn-danger" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="contact-page__form">
+                                    <form action="#" id="save-download" method="post" class="comment-one__form ">
+                                        @csrf
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <div class="comment-form__input-box">
+                                                    <input type="text" placeholder="Votre nom*" id="nom" required name="nom">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="comment-form__input-box">
+                                                    <input type="email" placeholder="Votre adresse email*" id="email" required name="email">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="comment-form__input-box">
+                                                    <input type="text" placeholder="Votre numéro de téléphone*" required id="telephone"  name="telephone">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <button type="submit" id="submit" class="thm-btn comment-form__btn close">Télécharger maintenant</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -71,4 +123,70 @@
     </div>
 </section>
 <!--Service Details End-->
+@endsection
+
+@section('scripts')
+<script>
+    $(document).ready(function(){
+        $(".download-livret").click(function(){
+            $("#myModal").modal('show');
+        });
+        $(".close").click(function(){
+            $("#myModal").modal('hide');
+        });
+
+        $("#submit").click(function(){
+            $("#submit").attr("disabled", "disabled");
+            let form = $("#save-download");
+            form.validate({
+                errorClass: "form-has-error",
+                errorElement: "i",
+                errorPlacement: function(error, element) {
+                    error.insertAfter(element);
+                }
+            });
+            if(form.valid()){
+                let nom = $("#nom").val();
+                let email = $("#email").val();
+                let telephone = $("#telephone").val();
+                let doc = " {{$service->nom}} "
+                let data = {nom: nom, document: doc, email: email, telephone: telephone, _token: "{{ csrf_token() }}"};
+                $.ajax({
+                    url: "{{route('telechargement')}}",
+                    type: "POST",
+                    data: data,
+                    cache: false,
+                    success: function(dataResult){
+                        const url = "{{$service->livret}}";
+                        const a = document.createElement('a');
+                        a.style.display = 'none';
+                        a.href=url;
+                        a.download="livret.pdf";
+                        a.target="_blank";
+                        document.body.appendChild(a);
+                        a.click();
+                        window.URL.revokeObjectURL(url);
+                        new Noty({
+                            type: 'success',
+                            text: 'Le livret a été téléchargé avec succès !',
+                            timeout: 7000,
+                            killer: true
+                        }).show();
+                    },
+                    error: function(xhr, textStatus, errorThrown){
+                        new Noty({
+                        type: 'error',
+                        text: xhr.responseJSON,
+                        timeout: 7000,
+                        killer: true
+                    }).show();
+                    }
+                });
+            }else{
+                return ;
+            }
+    })
+
+    });
+</script>
 @endsection

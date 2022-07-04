@@ -10,6 +10,7 @@ use App\Models\Service;
 use App\Models\UserServiceProspection;
 use Mail;
 use App\Models\Abonnement;
+use App\Models\DocumentTelecharge;
 use App\Models\UserProspect;
 use Stripe;
 
@@ -83,6 +84,27 @@ class HomeController extends Controller
             $inputs['type'] = "VENDEUR";
             $user = User::create($inputs);
             return response()->json($user);
+        }catch(Exception $e){
+            return response()->json($e->getMessage(), 500);
+        }
+        
+    }
+
+    public function telechargement(Request $request)
+    {
+        $this->validate($request, [
+            'nom' => 'required',
+            'email' => 'required',
+            'telephone' => 'required'
+        ], [
+            'required' => ':attribute est requis',
+        ]);
+
+        $inputs = $request->all();
+
+        try{
+            $document = DocumentTelecharge::create($inputs);
+            return response()->json($document);
         }catch(Exception $e){
             return response()->json($e->getMessage(), 500);
         }

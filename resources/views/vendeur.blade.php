@@ -34,7 +34,7 @@
             <div class="col-xl-6">
                 <div class="about-one__right">
                     <div class="section-title text-left">
-                        <span class="section-title__tagline">Rejoindre la CNIC</span>
+                        <span class="section-title__tagline">Rejoindre le CNIC</span>
                         <h2 class="section-title__title">Pourquoi devenir vendeur ?</h2>
                     </div>
                     
@@ -46,7 +46,7 @@
                     </div>
                     
                     <br>
-                    <p class="about-one__right-text">Le CNIC vous offre un cadre idéal pour développer vos compétences de vendeurs grâce à des formations et des séances de coaching données par des vendeurs expérimentés. <br>Tu peux désormais rejoindre l’équipe des vendeurs du Claudel
+                    <p class="about-one__right-text">Le CNIC vous offre un cadre idéal pour développer vos compétences de vendeurs grâce à des formations et des séances de coaching données par des vendeurs expérimentés. <br>Vous pouvez désormais rejoindre l’équipe des vendeurs du Claudel
                         NOUBISSIE International Consulting (CNIC)
                         <br><br>
                         Une aventure palpitante nous attend…</p>
@@ -60,7 +60,8 @@
                                     </div>
                                 </a>
                             </div>
-                            <h5 class="main-slider-three__video-text">Regarder la vidéo</h5>
+                            <h5 class="main-slider-three__video-text"><a href="https://www.youtube.com/watch?v=TOUX3stbGIs"
+                                class="video-popup">Regarder la vidéo </a></h5>
                         </div>
                 </div>
                 
@@ -82,7 +83,7 @@
                         <span class="section-title__tagline">Inscrivez-vous</span>
                         <h2 class="section-title__title">Devenez vendeur</h2>
                     </div>
-                    <p class="contact-one__text">Inscrivez-vous en tant que vendeur du Claudel Noubissie International Consulting et accéder à un espace dédié aux vendeurs contenant des formations inédites. </p>
+                    <p class="contact-one__text">Inscrivez-vous en tant que vendeur du Claudel NOUBISSIE International Consulting et accédez à un espace dédié aux vendeurs contenant des formations inédites. </p>
                     <h3 class="contact-one__founder"><span>Frais d'adhésion :</span> 10.000 FCFA (25€ hors du Cameroun)   </h3>
                     <h3 class="contact-one__founder"><span>Validité :</span> 12 mois  </h3>
                     <p>Les moyens de paiement disponibles</p>
@@ -99,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-6">
+            <div class="col-xl-6 col-lg-6" id="formulaire-devenir-vendeur">
                 <div class="contact-one__right">
                     <div class="contact-one__form-box">
                         <h3>Vos informations personnelles</h3>
@@ -135,7 +136,7 @@
                                 <div class="col-xl-6">
                                     <div class="contact-one__input-box">
                                         <input type="password" placeholder="Mot de passe *" class="password" required name="password" id="password">
-                                        <span style="font-size:12px"><input type="checkbox" id="toggle"> <span id="hide-show">Afficher mots de passe</span> </span>  
+                                        <span style="font-size:12px"><input type="checkbox" id="toggle"> <span id="hide-show">Afficher mot de passe</span> </span>  
                                     </div>
                                 </div>
                                 <div class="col-xl-6">
@@ -176,6 +177,122 @@
     </div>
 </section>
 <!--Contact One End-->
+<!--Case Two Start-->
+<section class="case-two">
+    <div class="container">
+        <div class="section-title text-center">
+            <span class="section-title__tagline">Résultats de nos</span>
+            <h2 class="section-title__title">Meilleurs vendeurs</h2>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="case-two__carousel owl-theme owl-carousel">
+                    <!--Case Two Single-->
+                    <div class="case-one__single">
+                        <div class="case-one__img-box">
+                            <div class="case-one__img">
+                                <img src="{{asset('assets/images/vendeurs/06.jpg')}}" style="width: 100%; height: 400px; object-fit:contain" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-one__single">
+                        <div class="case-one__img-box">
+                            <div class="case-one__img">
+                                <img src="{{asset('assets/images/vendeurs/08.jpg')}}" style="width: 100%; height: 400px; object-fit:contain" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-one__single">
+                        <div class="case-one__img-box">
+                            <div class="case-one__img"> 
+                                <img src="{{asset('assets/images/vendeurs/07.jpg')}}" style="width: 100%; height: 400px; object-fit:contain" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-one__single">
+                        <div class="case-one__img-box">
+                            <div class="case-one__img">
+                                <img src="{{asset('assets/images/vendeurs/09.jpg')}}" style="width: 100%; height: 400px; object-fit:contain" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Case Two End-->
+<!--CTA One Start-->
+<section class="cta-one cta-two">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="cta-one__inner">
+                    <h2 class="cta-one__title">Rejoignez la grande communauté <br> des vendeurs du CNIC</h2>
+                    <a href="#formulaire-devenir-vendeur" class="thm-btn cta-one__btn">Rejoignez-Nous dés maintenant</a>
+                    <div class="cta-one__shape wow slideInLeft" data-wow-delay="100ms"
+                        data-wow-duration="2500ms">
+                        <img src="{{asset('assets/images/shapes/cta-one-shape.png')}}" alt="Rejoindre le CNIC">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--CTA One End-->
+<!--News Three Start-->
+<section class="news-three">
+    <div class="news-three-bg"></div>
+    <div class="container">
+        <div class="section-title text-center">
+            
+            <span class="section-title__tagline">FAQ</span>
+            <h2 class="section-title__title">Questions Fréquements <br> Posées</h2>
+        </div>
+        <div class="row">
+            <div class="col-xl-12 col-lg-12">
+                <div class="service-details__right">
+                    <div class="service-details__faq">
+                        <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
+                            <div class="accrodion active">
+                                <div class="accrodion-title">
+                                    <h4>Interdum et malesuada fames ac ante ipsum</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>Suspendisse finibus urna mauris, vitae consequat quam vel. Vestibulum leo ligula, vit commodo nisl Sed luctus venenatis pellentesque.</p>
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4>Maecenas condimentum sollicitudin ligula,</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>Suspendisse finibus urna mauris, vitae consequat quam vel. Vestibulum leo ligula, vit commodo nisl Sed luctus venenatis pellentesque.</p>
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+                            <div class="accrodion last-chiled">
+                                <div class="accrodion-title">
+                                    <h4>Duis rhoncus orci ut metus rhoncus</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>Suspendisse finibus urna mauris, vitae consequat quam vel. Vestibulum leo ligula, vit commodo nisl Sed luctus venenatis pellentesque.</p>
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--News Three End-->
 
 @endsection
 

@@ -18,7 +18,7 @@ use App\Mail;
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/contactez-nous', 'HomeController@contact')->name('contact');
 Route::get('/qui-sommes-nous', 'HomeController@about')->name('about');
-Route::get('/devenir-vendeur', 'HomeController@vendeur')->name('vendeur');
+Route::get('/devenez-vendeur', 'HomeController@vendeur')->name('vendeur');
 Route::get('/service/{nom}', 'HomeController@service')->name('service');
 Route::post('/do-devenir-vendeur', 'HomeController@devenir_vendeur')->name('devenir-vendeur');
 Route::post('/payment/return', 'HomeController@return')->name('returnUrl');
@@ -33,3 +33,5 @@ Route::get('vendeur/{code}/prospection', 'HomeController@prospection')->name('pr
 Route::post('prospect', 'HomeController@prospect')->name('prospect');
 Route::get('biographie', 'HomeController@biographie')->name('biographie');
 Route::get('faq', 'HomeController@faq')->name('faq');
+
+Route::post('enregistrer-telechargement', 'HomeController@telechargement')->name('telechargement');
