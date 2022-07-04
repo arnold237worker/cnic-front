@@ -55,7 +55,7 @@
     <link rel="stylesheet" href="{{asset('assets/vendors/timepicker/timePicker.css')}}" />
 
     <!-- template styles -->
-    <link rel="stylesheet" href="{{asset('assets/css/conult.css?v4')}}" />
+    <link rel="stylesheet" href="{{asset('assets/css/conult.css?v5')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/noty.css?v1')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/conult-responsive.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/countrySelect.css')}}" />
