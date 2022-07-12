@@ -108,7 +108,7 @@
                                 <h3 class="section-title__title">{{$service->nom}}</h3>
                             </div>
                             <br>
-                            <p class="about-one__right-text"> {{$service->description}} </p>
+                            <p class="about-one__right-text"> {!! $service->description !!} </p>
                         </div>
                     </div>
                 </div>
