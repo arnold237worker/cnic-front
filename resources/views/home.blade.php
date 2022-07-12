@@ -507,7 +507,7 @@
         <div class="section-title text-center">
             
             <span class="section-title__tagline"></span>
-            <h2 class="section-title__title">Découvrez le parcours <br/> nos  meilleurs vendeurs</h2>
+            <h2 class="section-title__title">Découvrez le parcours <br/> de nos  meilleurs vendeurs</h2>
         </div>
         <div class="row">
             <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">

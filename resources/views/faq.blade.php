@@ -29,31 +29,21 @@ CNIC SARL - FAQ
                         <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
                             <div class="accrodion active">
                                 <div class="accrodion-title">
-                                    <h4>Interdum et malesuada fames ac ante ipsum</h4>
+                                    <h4>Comment avoir des commissions ou encore comment entrer en possession de ses commissions ?</h4>
                                 </div>
                                 <div class="accrodion-content">
                                     <div class="inner">
-                                        <p>Suspendisse finibus urna mauris, vitae consequat quam vel. Vestibulum leo ligula, vit commodo nisl Sed luctus venenatis pellentesque.</p>
+                                        <p>Lorsque vous adhérez au programme DEVENEZ VENDEUR, vous avez durant le premier mois, 50% de commission sur chaque produits et/ou services du CNIC que vous vendez. Dès le 2ème mois, les commissions seront de 10%.</p>
                                     </div><!-- /.inner -->
                                 </div>
                             </div>
                             <div class="accrodion">
                                 <div class="accrodion-title">
-                                    <h4>Maecenas condimentum sollicitudin ligula,</h4>
+                                    <h4>Quels sont les différents produits et/ou services que nous devons vendre ?</h4>
                                 </div>
                                 <div class="accrodion-content">
                                     <div class="inner">
-                                        <p>Suspendisse finibus urna mauris, vitae consequat quam vel. Vestibulum leo ligula, vit commodo nisl Sed luctus venenatis pellentesque.</p>
-                                    </div><!-- /.inner -->
-                                </div>
-                            </div>
-                            <div class="accrodion last-chiled">
-                                <div class="accrodion-title">
-                                    <h4>Duis rhoncus orci ut metus rhoncus</h4>
-                                </div>
-                                <div class="accrodion-content">
-                                    <div class="inner">
-                                        <p>Suspendisse finibus urna mauris, vitae consequat quam vel. Vestibulum leo ligula, vit commodo nisl Sed luctus venenatis pellentesque.</p>
+                                        <p>Les différents produits et services à vendre sont : Toutes les formations du Dr Claudel NOUBISSIE, l’adhésion au Claudel NOUBISSIE Business Group, Le Coffret VIP, Le programme DEVENEZ VENDEUR, les livres du Dr Claudel NOUBISSIE, etc…</p>
                                     </div><!-- /.inner -->
                                 </div>
                             </div>
