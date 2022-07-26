@@ -18,6 +18,7 @@ class UserProspect extends Model
         'attentes',
         'moyen_paiement',
         'user_id',
+        'lien_prospection_id',
         'statut'
     ];
 

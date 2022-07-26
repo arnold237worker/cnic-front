@@ -13,7 +13,8 @@ class UserServiceProspection extends Model
         'nom',
         'image',
         'description',
-        'user_id'
+        'user_id',
+        'lien_prospection_id'
     ];
 
 }

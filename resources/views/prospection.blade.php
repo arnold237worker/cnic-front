@@ -95,7 +95,14 @@
         <section class="about-one">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-xl-12">
+                        <p style="text-align: justify !important">
+                            <img src="{{$service->image}}" alt=" {{$service->nom}} " style="float: left; width: 45%; margin-right: 50px; margin-bottom: 10px; object-fit: contain">
+                            <strong class="section-title__title">{{$service->nom}}</strong> 
+                            <span style="text-align: justify !important">{!! $service->description !!}</span> 
+                        </p>
+                    </div>
+                    {{-- <div class="col-xl-6">
                         <div class="about-one__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                             <div class="about-one__img">
                                 <img src="{{$service->image}}" class="cnic-img" alt=" {{$service->nom}} ">
@@ -110,7 +117,7 @@
                             <br>
                             <p class="about-one__right-text"> {!! $service->description !!} </p>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </section>
@@ -156,6 +163,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <input type="hidden" name="lien_prospection_id" value=" {{$lien}} ">
                                 <div class="row">
                                     
                                     <div class="col-xl-12">

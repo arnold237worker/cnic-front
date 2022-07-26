@@ -29,7 +29,7 @@ Route::post('/enregistrer-vendeur', 'HomeController@enregistrer_vendeur')->name(
 Route::get('/supprimer-vendeur/{id}', 'HomeController@supprimer_vendeur')->name('supprimer-vendeur');
 Route::post('send-message', 'HomeController@send_message')->name('contact.send');
 
-Route::get('vendeur/{code}/prospection', 'HomeController@prospection')->name('prospection');
+Route::get('lien/{id}/vendeur/{code}/prospection/{service}', 'HomeController@prospection')->name('prospection');
 Route::post('prospect', 'HomeController@prospect')->name('prospect');
 Route::get('biographie', 'HomeController@biographie')->name('biographie');
 Route::get('faq', 'HomeController@faq')->name('faq');

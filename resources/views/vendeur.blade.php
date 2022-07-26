@@ -257,7 +257,7 @@
         <div class="section-title text-center">
             
             <span class="section-title__tagline">FAQ</span>
-            <h2 class="section-title__title">Questions Fréquements <br> Posées</h2>
+            <h2 class="section-title__title">Questions Fréquement <br> Posées</h2>
         </div>
         <div class="row">
             <div class="col-xl-12 col-lg-12">
@@ -389,7 +389,6 @@
     }
 
     function checkout(user) {
-        console.log("id"+user.id);
         let notityUrl = "{{route('notifyUrl')}}";
         CinetPay.setConfig({
             apikey: '{{config("cinetpay.api_key")}}',//   YOUR APIKEY
@@ -415,7 +414,6 @@
                   killer: true
                 }).show();
                 window.location.reload();
-                console.log(data);
             } else if (data.status == "ACCEPTED") {
                 new Noty({
                   type: 'success',
