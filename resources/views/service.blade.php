@@ -115,6 +115,13 @@
                             <span class="icon-phone"></span>
                         </div>
                         <div class="service-details__need-help-contact">
+                            <a href="tel:+237693918018">(+237) 693 91 80 18 </a>
+                        </div>
+                        <br>
+                        <div class="service-details__need-help-icon">
+                            <span class="fab fa-whatsapp"></span>
+                        </div>
+                        <div class="service-details__need-help-contact">
                             <a href="https://wa.me/+237676423188">(+237) 676 42 31 88 </a>
                         </div>
                     </div>

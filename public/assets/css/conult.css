@@ -5443,7 +5443,7 @@ ul {
   position: relative;
   height: 70px;
   width: 70px;
-  background-color: #edf3f6;
+  /* background-color: #edf3f6; */
   display: flex;
   align-items: center;
   justify-content: center;
