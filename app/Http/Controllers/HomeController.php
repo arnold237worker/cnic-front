@@ -164,7 +164,7 @@ class HomeController extends Controller
 
                     //Register abonnement
                     $abonnement = new Abonnement();
-                    $abonnement->code = uniqid();
+                    $abonnement->code = strtotime(now()).uniqid();
                     $abonnement->expired_at = date('Y-m-d H:i:s', strtotime('+1 year'));
                     $abonnement->user_id = $user->id;
                     $abonnement->save();
@@ -206,7 +206,7 @@ class HomeController extends Controller
 
                         //Register abonnement
                         $abonnement = new Abonnement();
-                        $abonnement->code = uniqid();
+                        $abonnement->code = strtotime(now()).uniqid();
                         $abonnement->expired_at = date('Y-m-d H:i:s', strtotime('+1 year'));
                         $abonnement->user_id = $user->id;
                         $abonnement->save();
