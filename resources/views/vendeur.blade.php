@@ -399,7 +399,7 @@
         });
         CinetPay.getCheckout({
             transaction_id: user.id+"_"+Math.floor(Math.random() * 100000000).toString(), // YOUR TRANSACTION ID
-            amount: 100,
+            amount: 10300,
             currency: 'XAF',
             channels: 'MOBILE_MONEY',
             description: 'Abonnement vendeur CNIC'
