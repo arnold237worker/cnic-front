@@ -327,30 +327,30 @@
         <div class="section-title text-center">
             <h2 class="section-title__title">Nos partenaires</h2>
         </div>
-        <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 50, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
+        <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 50, "slidesPerView": 3, "autoplay": { "delay": 5000 }, "breakpoints": {
             "0": {
                 "spaceBetween": 30,
-                "slidesPerView": 2
+                "slidesPerView": 1
             },
             "375": {
                 "spaceBetween": 30,
-                "slidesPerView": 2
+                "slidesPerView": 1
             },
             "575": {
                 "spaceBetween": 30,
-                "slidesPerView": 3
+                "slidesPerView": 1
             },
             "767": {
                 "spaceBetween": 50,
-                "slidesPerView": 4
+                "slidesPerView": 2
             },
             "991": {
                 "spaceBetween": 50,
-                "slidesPerView": 5
+                "slidesPerView": 3
             },
             "1199": {
                 "spaceBetween": 50,
-                "slidesPerView": 5
+                "slidesPerView": 4
             }
         }}'>
             <div class="swiper-wrapper">
