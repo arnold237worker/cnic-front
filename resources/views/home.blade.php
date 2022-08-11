@@ -577,16 +577,16 @@
                     <img src="{{asset('assets/images/partner/01.png')}}" alt="startup academy">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <img src="{{asset('assets/images/partner/02.png')}}" alt="Startup school">
+                    <img src="{{asset('assets/images/partner/13.png')}}" alt="Startup school">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
                     <img src="{{asset('assets/images/partner/03.png')}}" alt="La vitrine school">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <img src="{{asset('assets/images/partner/05.png')}}" alt="StartUp Factory">
+                    <img src="{{asset('assets/images/partner/14.png')}}" alt="StartUp Factory">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <img src="{{asset('assets/images/partner/04.png')}}" alt="The factory">
+                    <img src="{{asset('assets/images/partner/15.png')}}" alt="The factory">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
                     <img src="{{asset('assets/images/partner/06.png')}}" alt="StartUp Motors">
