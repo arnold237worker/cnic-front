@@ -583,13 +583,13 @@
                     <img src="{{asset('assets/images/partner/03.png')}}" alt="La vitrine school">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
+                    <img src="{{asset('assets/images/partner/04.png')}}" alt="The Factory">
+                </div><!-- /.swiper-slide -->
+                <div class="swiper-slide">
                     <img src="{{asset('assets/images/partner/14.png')}}" alt="StartUp Factory">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
                     <img src="{{asset('assets/images/partner/15.png')}}" alt="The factory">
-                </div><!-- /.swiper-slide -->
-                <div class="swiper-slide">
-                    <img src="{{asset('assets/images/partner/06.png')}}" alt="StartUp Motors">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
                     <img src="{{asset('assets/images/partner/07.png')}}" alt="Medics Care">
@@ -598,16 +598,16 @@
                     <img src="{{asset('assets/images/partner/08.png')}}" alt="StartUp Cosmetics">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <img src="{{asset('assets/images/partner/09.png')}}" alt="StartUp">
+                    <img src="{{asset('assets/images/partner/09.png')}}" alt="StartUp Fitness">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <img src="{{asset('assets/images/partner/10.png')}}" alt="StartUp">
+                    <img src="{{asset('assets/images/partner/10.png')}}" alt="StartUp Foods">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <img src="{{asset('assets/images/partner/11.png')}}" alt="StartUp">
+                    <img src="{{asset('assets/images/partner/11.png')}}" alt="StartUp Training">
                 </div><!-- /.swiper-slide -->
                 <div class="swiper-slide">
-                    <img src="{{asset('assets/images/partner/12.png')}}" alt="StartUp">
+                    <img src="{{asset('assets/images/partner/12.png')}}" alt="StartUp Group">
                 </div><!-- /.swiper-slide -->
             </div>
         </div>
