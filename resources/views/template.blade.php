@@ -50,6 +50,15 @@
     <link rel="stylesheet" href="{{asset('assets/css/conult-responsive.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/countrySelect.css')}}" />
     <script src="https://cdn.cinetpay.com/seamless/main.js" type="text/javascript"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DR0D1714BV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DR0D1714BV');
+    </script>
 </head>
 
 <body>
