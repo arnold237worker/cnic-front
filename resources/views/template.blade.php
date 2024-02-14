@@ -122,12 +122,12 @@
                                     <li class="@if(session('page') == "faq") current @endif"><a href="{{route('faq')}}">FAQ</a></li>
                                     <li class="@if(session('page') == "vendeur") current @endif"><a href="{{route('vendeur')}}">Devenez vendeur</a></li>
                                     <li class="@if(session('page') == "contact") current @endif"><a href="{{route('contact')}}">Contactez-Nous</a></li>
-                                    <li class="espace-vendeur-link"><a href="  {{\config('app.bo_url')}} ">Espace vendeur</a></li>
+                                    <li class="espace-vendeur-link"><a href="  {{\config('app.bo_url')}} ">Espace TSA</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="main-menu-two__wrapper-right" style="margin-top: -15px">
-                            <a href="{{\config('app.bo_url')}}" target="_blank" class="btn btn-primary btn-md espace-btn" >  Espace vendeur</a>
+                            <a href="{{\config('app.bo_url')}}" target="_blank" class="btn btn-primary btn-md espace-btn" >  Espace TSA</a>
                         </div>
                     </div>
                 </div>
