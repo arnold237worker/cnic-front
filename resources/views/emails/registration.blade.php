@@ -224,7 +224,7 @@
                                             Félicitations ! Vous êtes officiellement VENDEUR au Claudel NOUBISSIE International Consulting (CNIC) 
                                         </p>
                                         <p style="line-height: 24px;margin-bottom:15px;">
-                                            Pour vous connecter sur la plateforme des vendeurs que voici => <a href="https://vendeur.cnic.cm">https://vendeur.cnic.cm</a>, utilisez les identifiants suivants :
+                                            Pour vous connecter sur la plateforme des vendeurs que voici => <a href="https://tsa.cnic.cm">https://tsa.cnic.cm</a>, utilisez les identifiants suivants :
                                         </p>
 
                                     </td>
